@@ -32,7 +32,7 @@ export default function HomePage() {
           <div className="max-w-screen-2xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 z-10">
               <span className="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-6 block">
-                The Premium OEM/ODM/OBM Standard
+                The Foundry Lab · OEM/ODM/OBM
               </span>
               <h1 className="font-headline text-6xl md:text-8xl lg:text-9xl font-normal tracking-tight text-on-background leading-[0.9] mb-8 text-balanced">
                 Your Brand{" "}
