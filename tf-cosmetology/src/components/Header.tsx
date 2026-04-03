@@ -14,6 +14,7 @@ const navLinks = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [locale, setLocale] = useState<"en" | "th">("en");
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-nav transition-all">
@@ -37,12 +38,23 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link
-          href="/get-started"
-          className="hidden md:inline-block bg-primary text-on-primary px-8 py-2.5 rounded-md font-label font-medium tracking-wide hover:opacity-90 transition-all"
-        >
-          Get a Quote
-        </Link>
+        <div className="hidden md:flex items-center gap-4">
+          <button
+            onClick={() => setLocale(locale === "en" ? "th" : "en")}
+            className="flex items-center gap-1.5 font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors"
+            aria-label="Toggle language"
+          >
+            <span className={locale === "en" ? "font-bold text-primary" : ""}>EN</span>
+            <span className="text-outline-variant">|</span>
+            <span className={locale === "th" ? "font-bold text-primary" : ""}>TH</span>
+          </button>
+          <Link
+            href="/get-started"
+            className="bg-primary text-on-primary px-8 py-2.5 rounded-md font-label font-medium tracking-wide hover:opacity-90 transition-all"
+          >
+            Get a Quote
+          </Link>
+        </div>
 
         {/* Mobile menu button */}
         <button
@@ -75,6 +87,14 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <button
+            onClick={() => setLocale(locale === "en" ? "th" : "en")}
+            className="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-on-surface-variant"
+          >
+            <span className={locale === "en" ? "font-bold text-primary" : ""}>EN</span>
+            <span className="text-outline-variant">|</span>
+            <span className={locale === "th" ? "font-bold text-primary" : ""}>TH</span>
+          </button>
           <Link
             href="/get-started"
             className="block bg-primary text-on-primary px-8 py-3 rounded-md font-label font-medium tracking-wide text-center"
