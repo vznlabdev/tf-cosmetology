@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balanced {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .glass-nav {
+    background: rgba(251, 249, 244, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .editorial-shadow {
+    box-shadow: 0 24px 40px -4px rgba(27, 28, 25, 0.06);
+  }
+}

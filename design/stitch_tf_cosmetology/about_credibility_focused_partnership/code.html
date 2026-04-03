@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        /* Custom scrollbar to match the warm clinical aesthetic */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fbf9f4; }
+        ::-webkit-scrollbar-thumb { background: #bfc8c8; border-radius: 4px; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-primary-fixed": "#002020",
+                "surface-tint": "#296767",
+                "secondary-container": "#e7e2da",
+                "error": "#ba1a1a",
+                "primary-fixed": "#b0eeed",
+                "on-primary-fixed-variant": "#044f4f",
+                "on-secondary-container": "#67645e",
+                "surface-container": "#f0eee9",
+                "on-secondary-fixed": "#1d1c17",
+                "on-primary": "#ffffff",
+                "on-secondary": "#ffffff",
+                "surface-variant": "#e4e2dd",
+                "surface-container-highest": "#e4e2dd",
+                "tertiary-container": "#5a4000",
+                "secondary-fixed": "#e7e2da",
+                "on-tertiary": "#ffffff",
+                "tertiary-fixed-dim": "#e9c176",
+                "surface-bright": "#fbf9f4",
+                "secondary": "#615e58",
+                "on-tertiary-container": "#d3ac64",
+                "surface-dim": "#dbdad5",
+                "surface-container-low": "#f5f3ee",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "primary-container": "#004d4d",
+                "outline": "#6f7978",
+                "primary-fixed-dim": "#94d1d1",
+                "on-tertiary-fixed": "#261900",
+                "secondary-fixed-dim": "#cac6be",
+                "inverse-primary": "#94d1d1",
+                "primary": "#003434",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#eae8e3",
+                "tertiary-fixed": "#ffdea5",
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#f2f1ec",
+                "surface": "#fbf9f4",
+                "on-background": "#1b1c19",
+                "background": "#fbf9f4",
+                "tertiary": "#3e2b00",
+                "on-error": "#ffffff",
+                "inverse-surface": "#30312e",
+                "on-surface": "#1b1c19",
+                "on-primary-container": "#80bdbc",
+                "error-container": "#ffdad6"
+              },
+              fontFamily: {
+                "headline": ["Newsreader"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 max-w-none bg-[#fbf9f4]/80 backdrop-blur-md">
+<div class="font-['Newsreader'] text-2xl font-bold tracking-tighter text-[#003434]">AURA CLINICAL</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-['Newsreader'] tracking-tight font-semibold text-[#6f7978] hover:text-[#003434] transition-colors duration-300 pb-1" href="#">Formulations</a>
+<a class="font-['Newsreader'] tracking-tight font-semibold text-[#6f7978] hover:text-[#003434] transition-colors duration-300 pb-1" href="#">Manufacturing</a>
+<a class="font-['Newsreader'] tracking-tight font-semibold text-[#6f7978] hover:text-[#003434] transition-colors duration-300 pb-1" href="#">Sustainability</a>
+<a class="font-['Newsreader'] tracking-tight font-semibold text-[#6f7978] hover:text-[#003434] transition-colors duration-300 pb-1" href="#">R&amp;D</a>
+<a class="font-['Newsreader'] tracking-tight font-semibold text-[#6f7978] hover:text-[#003434] transition-colors duration-300 pb-1" href="#">Journal</a>
+<a class="font-['Newsreader'] tracking-tight font-semibold text-[#6f7978] hover:text-[#003434] transition-colors duration-300 pb-1" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 bg-primary text-on-primary font-label text-sm uppercase tracking-widest rounded-md hover:opacity-80 transition-opacity">Request Quote</button>
+</div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-8 md:px-24 py-20 lg:py-32 flex flex-col items-center text-center max-w-7xl mx-auto">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl tracking-tight text-primary leading-none mb-8">
+                The Team Behind Your Brand
+            </h1>
+<p class="font-body text-xl md:text-2xl text-outline max-w-3xl leading-relaxed">
+                At TF Cosmetology, we transcend the traditional role of a manufacturer. We operate as your strategic scientific partner, weaving heritage expertise with clinical precision to bring your vision to life.
+            </p>
+</section>
+<!-- Leadership Section -->
+<section class="bg-surface-container-low py-24 px-8 md:px-24">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<h2 class="font-headline text-4xl text-primary italic">Executive Leadership</h2>
+<div class="h-[1px] flex-grow bg-outline-variant/30 mb-2 mx-8 hidden md:block"></div>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-outline">Visionaries in Cosmetic Science</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Leader 1 -->
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional portrait of CEO Arkarapat Chanajindasopon in a minimalist modern office setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkVYhRYO2iZnpnmOC6UV--WB_nR3_UpJOiu2_u7YqlSCc27LM-n66DQEm8Ikd-Tlg6k2ZmtJZ9Tue1GEdOebQq8IfjBR91ve3epSis9EAU8lZse9_EePeqqzbKBCNbk9x_tobsRbP-F8PdWXIKRpjqY3kd_GZMypzSZrzVowqjjqA2D7OCMzTUidKecbweH-mmURRVsYG_LtBh5onPNsMLUh57hbz8E2lFS3gByamFAaZVh8jJoPSaJ3NF0Mzm0mz8XjoJcbxBba4"/>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-1">Arkarapat Chanajindasopon</h3>
+<p class="font-label text-xs uppercase tracking-widest text-tertiary mb-4">Chief Executive Officer</p>
+<p class="font-body text-on-surface-variant leading-relaxed">Strategic architect with over two decades of experience in navigating the global cosmetics landscape and industrial scaling.</p>
+</div>
+<!-- Leader 2 -->
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up portrait of QC and RD Director Penchit Charoensiri in a clinical laboratory environment wearing professional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8WQU32dx2mXkAE_dBDqEMxhFkOmOid3QhZFQYxfR59unBq-M5hgwPbUtOJ3uK1XOjBS5Y5k1aiybW4Ur7UN6RfXUvDs04yA-iNMqitsTBusySs4NlR2Jnfz8p_4d6Af0Z4tkuNhN-vTFfouhlGtCV5QovQdjyC1XNkhD4-nmZjPscxiAq1FZlOhUrjvhBKY9-QhMPeDwd18Mgl1N1X5YfP3YEihQtJ03-q85MmiHgWE_FHQWLzArnrRUXBaW0CRPQU6zU4ckSR-I"/>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-1">Penchit Charoensiri</h3>
+<p class="font-label text-xs uppercase tracking-widest text-tertiary mb-4">QC and RD Director</p>
+<p class="font-body text-on-surface-variant leading-relaxed">Overseeing the rigorous quality control protocols and research trajectories that define our human-centric laboratory standards.</p>
+</div>
+<!-- Leader 3 -->
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of Dr. Sang Hyun Moh, R&amp;D Manager, in a bright studio with scientific equipment subtly visible in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIREFJ2hJo7rzMRvlrStiURICpX8BStObPGVntmX9P7Q8vGaXHpKQjr0QhEOLtaKv1npeKRlUQYPPvSZPSnKUCal9T_xHFKa9RFRtWJicG1TqQ2egFbeMkxkBvvHAJY6bxnDVtYy1bbljmN_9OEFrURwR1teVgYXvo-rd5qWj0sdBbKUDwsVJuEYvKxKjyV5ziO-F6VBTlNnvGnq-TWm8KpUp3P2CvvhV9AzxmyexrdBh_18hJK1Vy_JjBiJFlh113KNHyQqXm3tU"/>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-1">Dr. Sang Hyun Moh</h3>
+<p class="font-label text-xs uppercase tracking-widest text-tertiary mb-4">R&amp;D Manager</p>
+<p class="font-body text-on-surface-variant leading-relaxed">PhD in Biotechnology leading the charge in novel ingredient synthesis and advanced molecular formulation techniques.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Global R&D Network Section -->
+<section class="py-24 px-8 md:px-24">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-5xl text-primary text-center mb-20 tracking-tight">Global R&amp;D Network</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Partner 1 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border-b-2 border-transparent hover:border-tertiary transition-all duration-300">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">public</span>
+<h4 class="font-headline text-2xl text-primary">Inabata Japan</h4>
+</div>
+<p class="font-body text-on-surface-variant">Global leadership in ingredient sourcing and sophisticated supply chain intelligence, ensuring rare Japanese actives reach your formulation.</p>
+</div>
+<!-- Partner 2 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border-b-2 border-transparent hover:border-tertiary transition-all duration-300">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">biotech</span>
+<h4 class="font-headline text-2xl text-primary">Vevy Europe Italy</h4>
+</div>
+<p class="font-body text-on-surface-variant">Advanced raw materials and specialized active ingredients since 1959. Pioneers in cutaneous biology and high-performance textures.</p>
+</div>
+<!-- Partner 3 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border-b-2 border-transparent hover:border-tertiary transition-all duration-300">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<h4 class="font-headline text-2xl text-primary">Alban Muller France</h4>
+</div>
+<p class="font-body text-on-surface-variant">40 years of expertise in natural cosmetic formulation. Eco-responsible extraction of plant-based actives with high bioavailability.</p>
+</div>
+<!-- Partner 4 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border-b-2 border-transparent hover:border-tertiary transition-all duration-300">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<h4 class="font-headline text-2xl text-primary">Sahmyook Health University</h4>
+</div>
+<p class="font-body text-on-surface-variant">Academic research collaboration based in Korea, focusing on dermatological studies and future-facing wellness technologies.</p>
+</div>
+<!-- Partner 5 -->
+<div class="p-10 bg-surface-container-lowest rounded-xl shadow-sm border-b-2 border-transparent hover:border-tertiary transition-all duration-300">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">science</span>
+<h4 class="font-headline text-2xl text-primary">Bionap Italy</h4>
+</div>
+<p class="font-body text-on-surface-variant">Standardized botanical extracts for nutraceuticals and cosmeceuticals, utilizing Mediterranean biodiversity for clinical efficacy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications Gallery -->
+<section class="bg-primary text-on-primary py-24 px-8 md:px-24">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center md:text-left">
+<div class="flex justify-center md:justify-start mb-6">
+<span class="material-symbols-outlined text-5xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h4 class="font-headline text-3xl mb-4">GMP Certified</h4>
+<p class="font-body text-on-primary-container text-lg">Rigorous manufacturing standards that guarantee safety, quality, and batch consistency for every SKU produced.</p>
+</div>
+<div class="text-center md:text-left">
+<div class="flex justify-center md:justify-start mb-6">
+<span class="material-symbols-outlined text-5xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<h4 class="font-headline text-3xl mb-4">ISO Accreditation</h4>
+<p class="font-body text-on-primary-container text-lg">Internationally recognized quality management systems ensuring your brand is ready for any global market entry.</p>
+</div>
+<div class="text-center md:text-left">
+<div class="flex justify-center md:justify-start mb-6">
+<span class="material-symbols-outlined text-5xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<h4 class="font-headline text-3xl mb-4">FDA Thailand</h4>
+<p class="font-body text-on-primary-container text-lg">Full compliance with Thai FDA regulations, providing local expertise and smooth regulatory registration processes.</p>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-32 px-8 md:px-24">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-4xl text-primary italic text-center mb-20">Our Evolution</h2>
+<div class="relative">
+<!-- Vertical Line -->
+<div class="absolute left-1/2 -translate-x-1/2 w-[1px] h-full bg-outline-variant/50"></div>
+<div class="space-y-24">
+<!-- 1990 -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12 text-right">
+<h4 class="font-headline text-3xl text-primary">Founded 1990</h4>
+<p class="font-body text-outline mt-2">The inception of TF Cosmetology, bringing pharmaceutical precision to beauty.</p>
+</div>
+<div class="w-4 h-4 rounded-full bg-tertiary z-10"></div>
+<div class="w-5/12"></div>
+</div>
+<!-- International Partnership -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12"></div>
+<div class="w-4 h-4 rounded-full bg-tertiary z-10"></div>
+<div class="w-5/12 text-left">
+<h4 class="font-headline text-3xl text-primary">Global Reach</h4>
+<p class="font-body text-outline mt-2">Established first international partnership with Japanese R&amp;D labs.</p>
+</div>
+</div>
+<!-- GMP -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12 text-right">
+<h4 class="font-headline text-3xl text-primary">GMP Mastery</h4>
+<p class="font-body text-outline mt-2">Achievement of full GMP certification, standardizing excellence across all floors.</p>
+</div>
+<div class="w-4 h-4 rounded-full bg-tertiary z-10"></div>
+<div class="w-5/12"></div>
+</div>
+<!-- 500th Brand -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12"></div>
+<div class="w-4 h-4 rounded-full bg-tertiary z-10"></div>
+<div class="w-5/12 text-left">
+<h4 class="font-headline text-3xl text-primary">500 Brands</h4>
+<p class="font-body text-outline mt-2">Celebrating 500 successful brand launches across Europe, Asia, and North America.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA -->
+<section class="py-32 px-8 flex flex-col items-center text-center">
+<div class="max-w-3xl p-16 bg-surface-container rounded-2xl relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-5xl text-primary mb-8 tracking-tight">Ready to Work With Us?</h2>
+<p class="font-body text-lg text-outline mb-12">Let's transform your scientific vision into a market-leading reality. Our expert team is ready to consult on your next formulation.</p>
+<button class="px-12 py-4 bg-primary text-on-primary font-label text-sm uppercase tracking-[0.2em] rounded-md hover:opacity-90 transition-all shadow-xl shadow-primary/10">
+                        Get Started
+                    </button>
+</div>
+<!-- Subtle texture overlay -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #003434 1px, transparent 0); background-size: 24px 24px;"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-12 py-20 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#f5f3ee]">
+<div class="flex flex-col gap-6">
+<div class="font-['Newsreader'] text-xl font-bold text-[#003434]">AURA CLINICAL</div>
+<p class="font-['Manrope'] text-sm tracking-wide uppercase text-[#6f7978] max-w-xs">
+                © 2024 Aura Clinical Manufacturing. All rights reserved. Precision in Beauty.
+            </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#003434]">Navigation</span>
+<a class="text-[#6f7978] hover:underline decoration-[#3e2b00] underline-offset-4 text-sm font-['Manrope'] tracking-wide uppercase" href="#">Privacy Policy</a>
+<a class="text-[#6f7978] hover:underline decoration-[#3e2b00] underline-offset-4 text-sm font-['Manrope'] tracking-wide uppercase" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#003434]">Standards</span>
+<a class="text-[#6f7978] hover:underline decoration-[#3e2b00] underline-offset-4 text-sm font-['Manrope'] tracking-wide uppercase" href="#">ISO Certifications</a>
+<a class="text-[#6f7978] hover:underline decoration-[#3e2b00] underline-offset-4 text-sm font-['Manrope'] tracking-wide uppercase" href="#">Global Logistics</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#003434]">Company</span>
+<a class="text-[#6f7978] hover:underline decoration-[#3e2b00] underline-offset-4 text-sm font-['Manrope'] tracking-wide uppercase" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>

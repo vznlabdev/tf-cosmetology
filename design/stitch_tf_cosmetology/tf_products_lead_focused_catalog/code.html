@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Catalog | Apothecary Lab OEM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#3e2b00",
+              "on-primary-fixed-variant": "#044f4f",
+              "surface-container-highest": "#e4e2dd",
+              "primary-fixed": "#b0eeed",
+              "inverse-primary": "#94d1d1",
+              "secondary-container": "#e7e2da",
+              "secondary": "#615e58",
+              "on-tertiary-fixed": "#261900",
+              "primary-container": "#004d4d",
+              "surface": "#fbf9f4",
+              "on-primary-container": "#80bdbc",
+              "on-error": "#ffffff",
+              "inverse-surface": "#30312e",
+              "surface-bright": "#fbf9f4",
+              "on-secondary-fixed": "#1d1c17",
+              "on-tertiary-container": "#d3ac64",
+              "surface-variant": "#e4e2dd",
+              "tertiary-fixed": "#ffdea5",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container": "#f0eee9",
+              "on-primary": "#ffffff",
+              "outline-variant": "#bfc8c8",
+              "secondary-fixed-dim": "#cac6be",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#e7e2da",
+              "on-secondary-fixed-variant": "#494741",
+              "on-secondary-container": "#67645e",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#5a4000",
+              "surface-tint": "#296767",
+              "error": "#ba1a1a",
+              "background": "#fbf9f4",
+              "primary-fixed-dim": "#94d1d1",
+              "on-surface": "#1b1c19",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#002020",
+              "primary": "#003434",
+              "surface-dim": "#dbdad5",
+              "on-background": "#1b1c19",
+              "inverse-on-surface": "#f2f1ec",
+              "surface-container-low": "#f5f3ee",
+              "surface-container-high": "#eae8e3",
+              "outline": "#6f7978",
+              "on-surface-variant": "#3f4848"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            background: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopAppBar Navigation -->
+<header class="bg-[#fbf9f4]/80 dark:bg-stone-900/80 backdrop-blur-md docked full-width top-0 sticky z-50 no-border tonal-shift-bg flat no shadows">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-['Newsreader'] font-bold text-[#004D4D] dark:text-teal-400 text-xl tracking-tighter">Apothecary Lab</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#004D4D] dark:text-teal-300 font-semibold border-b border-[#004D4D]/20 transition-colors duration-300" href="#">Treatments</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#004D4D] transition-colors duration-300" href="#">Manufacturing</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#004D4D] transition-colors duration-300" href="#">Philosophy</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#004D4D] transition-colors duration-300" href="#">Journal</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium text-sm tracking-wide transition-all active:opacity-70 hover:shadow-lg">
+                Enquire
+            </button>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="max-w-screen-2xl mx-auto px-8 pt-20 pb-12">
+<div class="max-w-3xl">
+<h1 class="font-headline italic text-5xl md:text-7xl text-primary tracking-tight leading-none mb-6">
+                Explore Our Product Range
+            </h1>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed opacity-80">
+                Proven formulas ready to customize or build from scratch. Our laboratory combines botanical heritage with modern molecular science.
+            </p>
+</div>
+</section>
+<!-- Filter Bar -->
+<section class="sticky top-[84px] z-40 bg-surface/90 backdrop-blur-md py-4 mb-12">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex items-center gap-8 overflow-x-auto no-scrollbar border-b border-outline-variant/15 pb-4">
+<button class="whitespace-nowrap font-label text-sm uppercase tracking-widest text-primary border-b-2 border-primary pb-1">All</button>
+<button class="whitespace-nowrap font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Skincare</button>
+<button class="whitespace-nowrap font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Body Care</button>
+<button class="whitespace-nowrap font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Supplements</button>
+<button class="whitespace-nowrap font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Soap</button>
+<button class="whitespace-nowrap font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Makeup</button>
+<button class="whitespace-nowrap font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Specialty</button>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<main class="max-w-screen-2xl mx-auto px-8 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Category Card 1 -->
+<div class="group flex flex-col h-full bg-surface-container rounded-lg overflow-hidden transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist laboratory setup with glass droppers and amber bottles containing clear serum on a warm beige textured surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL_FMlb7cPbt2BzDduCKQWu7_DUMvJcl5wqS-WtQ7R6xLT92ud6tknRjgCD0Q6ZDznXSAA4njmF0uz7SvWdoOU7RBHVz3OMsGIhaMw10-4Xoiq-DwhIDqeeeMGZW_iSgT_-63kFvcigL0vL9HzOs7a5styKZo92Mcfaq6z3MH_uD1HYwbg9eMruYlHlqKKC_LR2f72LuFR9L9thY0IPonjqU3sJoP8RvTZN04zy5-2u0YZhSOisB8IRVy-12kcbFua2vN1AZrn0Yw"/>
+<div class="absolute top-4 left-4 bg-primary-container/90 text-on-primary-container px-3 py-1 rounded-md text-[10px] font-label uppercase tracking-widest backdrop-blur-sm">
+                        Low MOQ Available
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl text-on-surface mb-4">Advanced Skincare</h3>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Hyaluronic Acid</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Niacinamide</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Ceramides</span>
+</div>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="bg-primary text-on-primary py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-on-primary-fixed-variant">View Catalog</button>
+<button class="bg-secondary-container text-on-secondary-container py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-surface-container-highest">Request Sample</button>
+</div>
+</div>
+</div>
+<!-- Category Card 2 -->
+<div class="group flex flex-col h-full bg-surface-container rounded-lg overflow-hidden transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional clinical photography of high-end cosmetic textures including thick white cream and clear gel on a sterile warm neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-aj-yIGlSATwfRCb7aN-S5aJKdGEZ2zWaDaIO4W1itFam1eAz3dmUCNv_oO4limH-OMdioRPzUdmMyHmcuzhF86xkkZMPZZdBU-ejbE5-pgoZ560K_5bpD86Uj4PB69seNDOVr1tBFKXt0OXAoAljedLuzEsLgN4gv01_rLt9JQrPIsnxMKpx2sXFf_GEUMDuTP5ld9szf15TSSSSxMBuFcze1O9MKrCWv9nKCP0HoHiYHtvl5BcHtLl2dPdHxFnK-WqFOKruHcw"/>
+<div class="absolute top-4 left-4 bg-primary-container/90 text-on-primary-container px-3 py-1 rounded-md text-[10px] font-label uppercase tracking-widest backdrop-blur-sm">
+                        Low MOQ Available
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl text-on-surface mb-4">Dermal Body Care</h3>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Shea Butter</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Vitamin E</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Retinol</span>
+</div>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="bg-primary text-on-primary py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-on-primary-fixed-variant">View Catalog</button>
+<button class="bg-secondary-container text-on-secondary-container py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-surface-container-highest">Request Sample</button>
+</div>
+</div>
+</div>
+<!-- Category Card 3 -->
+<div class="group flex flex-col h-full bg-surface-container rounded-lg overflow-hidden transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of laboratory supplements and powders in petri dishes with scientific precision and soft natural overhead lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKh7Rem67Rc0JJTX7Q2-1HhecoZ_ahOVgl-_mVbuEE7hXK00FvbHmGIdM51pSSRudWTg2WX-1g2X4JJoJsZg-zFGMZplRKTz3sjdfs7P3KGoYXyOimza1mcb5BtWviToWLcnRPl9yNigpjZllizmv0QDBO11FS2pJm-2wTxSt1Bd3i5lmIVwQiDKPHflg58WuVEphOZo8A4vHJWrf1XaVpptxmX4PS2HTAn-6ONTOd3TZmp3aggNdxmJquFdVXlg9vSEXR9EUyELY"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl text-on-surface mb-4">Nutraceuticals</h3>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Collagen</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Biotin</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Ashwagandha</span>
+</div>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="bg-primary text-on-primary py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-on-primary-fixed-variant">View Catalog</button>
+<button class="bg-secondary-container text-on-secondary-container py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-surface-container-highest">Request Sample</button>
+</div>
+</div>
+</div>
+<!-- Category Card 4 -->
+<div class="group flex flex-col h-full bg-surface-container rounded-lg overflow-hidden transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artisan hand-milled soap bars with botanical inclusions arranged artfully on a light stone slab with morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2pPdGVvjQJzRhKdPQhuJ2Po9zJ1JTqWECXho0BnQ7ZdmhSK6aF33RI_kiybqzTQaFamE3T0hHhXacCK6SqK90vtG9qLjHLItCA_yCLrQk0iXCf7_Wuzr_ZACGYls9gy2cMlvBBBgHumj107vpkMtLVc4Ud2-OWVk-dw5OLsph928VDa75tr0EWt2jhcpuUvQSalgiUxuDUpklvNCFwCH618bvGTtC56aaa3JMwVXep9td2_SrCy3ZH7RKD1S0CM-nuigLip_UvJc"/>
+<div class="absolute top-4 left-4 bg-primary-container/90 text-on-primary-container px-3 py-1 rounded-md text-[10px] font-label uppercase tracking-widest backdrop-blur-sm">
+                        Low MOQ Available
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl text-on-surface mb-4">Botanical Soap</h3>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Cold Pressed</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Essential Oils</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Clay</span>
+</div>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="bg-primary text-on-primary py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-on-primary-fixed-variant">View Catalog</button>
+<button class="bg-secondary-container text-on-secondary-container py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-surface-container-highest">Request Sample</button>
+</div>
+</div>
+</div>
+<!-- Category Card 5 -->
+<div class="group flex flex-col h-full bg-surface-container rounded-lg overflow-hidden transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern makeup pigments and brushes on a soft beige surface with editorial lighting and clean lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxSV5evjqXj1TbhGrK2LM8ZZ-5w6KbVjHY6OYPUa5iImpkr1pEdKkv5nw02o8aj7LrF1mHHal6Mez84UY20d4x6qCBlHftf5R3XfzWB7G7jEmU3q6LIrS-a672-lU6SLB1-qOt630-0lGr0BlodWzSTBHI2Wi-WaTHr_4wgg1JGTAecQWa-hrn-wdQE7jLknqZLfLlucOBHYuzY7L8cuU78tjFr0unjTe4wxpHuEdH2WdbJv1ssC5YV12klnFaJAKKJFo8rMfrxDE"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl text-on-surface mb-4">Clean Makeup</h3>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Mineral Based</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Vegan</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">SPF 30+</span>
+</div>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="bg-primary text-on-primary py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-on-primary-fixed-variant">View Catalog</button>
+<button class="bg-secondary-container text-on-secondary-container py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-surface-container-highest">Request Sample</button>
+</div>
+</div>
+</div>
+<!-- Category Card 6 -->
+<div class="group flex flex-col h-full bg-surface-container rounded-lg overflow-hidden transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Specialized treatment bottles in a clean clinical environment with architectural lighting and a sense of pharmaceutical luxury" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpWMGAgXWxfQUBordfZXgRakI1hded77nPoBU_kHciNytUqrqd5K_VRR-W1ECxKmSqsGWK_YkCN8nDdVvMZvPZb0m64PjZJrgT6Jxm7l088KNUmDiXC6nDvc8FPCF16WZ_bteXKNp5y5As1ZFmrgUmMntmNUdCMya8QPZzQ8hsnLbDOr_JciSz04dIlBkYqXUtqf1oIybPO9A6ufVNHxPwA8O5wtsuqHQch9tpWpSpiBqwbA-z3FpWQrL3z-JigEWwtDyF2bhAknY"/>
+<div class="absolute top-4 left-4 bg-primary-container/90 text-on-primary-container px-3 py-1 rounded-md text-[10px] font-label uppercase tracking-widest backdrop-blur-sm">
+                        Low MOQ Available
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl text-on-surface mb-4">Specialty Treatments</h3>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Post-Procedure</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Acne Care</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-label rounded-full">Anti-Aging</span>
+</div>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="bg-primary text-on-primary py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-on-primary-fixed-variant">View Catalog</button>
+<button class="bg-secondary-container text-on-secondary-container py-3 px-4 rounded-md text-xs font-label uppercase tracking-widest transition-all hover:bg-surface-container-highest">Request Sample</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Quiz Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl text-primary italic mb-6">Not Sure What You Need?</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-lg mb-8">
+                    Answer three quick questions about your brand and vision. Our R&amp;D team will curate a selection of formulas tailored to your market.
+                </p>
+<div class="flex items-center gap-4 text-tertiary">
+<span class="material-symbols-outlined" data-weight="fill">verified</span>
+<span class="font-label text-sm uppercase tracking-widest">Takes less than 2 minutes</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-2xl shadow-on-surface/5">
+<div class="mb-10 flex justify-between items-center">
+<div class="flex gap-2">
+<div class="w-8 h-1 bg-primary rounded-full"></div>
+<div class="w-8 h-1 bg-outline-variant/30 rounded-full"></div>
+<div class="w-8 h-1 bg-outline-variant/30 rounded-full"></div>
+</div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Step 1 of 3</span>
+</div>
+<div class="space-y-8">
+<div>
+<p class="font-headline text-2xl text-on-surface mb-6">What is your primary market focus?</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex items-center gap-4 p-4 border border-outline-variant/15 rounded-md cursor-pointer hover:bg-surface-container transition-all group">
+<input class="text-primary focus:ring-primary" name="market" type="radio"/>
+<span class="font-body text-on-surface">Premium/Luxury</span>
+</label>
+<label class="flex items-center gap-4 p-4 border border-outline-variant/15 rounded-md cursor-pointer hover:bg-surface-container transition-all group">
+<input class="text-primary focus:ring-primary" name="market" type="radio"/>
+<span class="font-body text-on-surface">Dermatology/Clinical</span>
+</label>
+<label class="flex items-center gap-4 p-4 border border-outline-variant/15 rounded-md cursor-pointer hover:bg-surface-container transition-all group">
+<input class="text-primary focus:ring-primary" name="market" type="radio"/>
+<span class="font-body text-on-surface">Clean/Organic</span>
+</label>
+<label class="flex items-center gap-4 p-4 border border-outline-variant/15 rounded-md cursor-pointer hover:bg-surface-container transition-all group">
+<input class="text-primary focus:ring-primary" name="market" type="radio"/>
+<span class="font-body text-on-surface">Mass Market</span>
+</label>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-md font-label uppercase tracking-widest transition-all hover:bg-on-primary-fixed-variant">Continue</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f5f3ee] dark:bg-stone-950 full-width py-16 px-8 mt-20 tonal-layering-bg-shift border-t border-[#bfc8c8]/15">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-screen-2xl mx-auto">
+<div>
+<span class="font-['Newsreader'] text-lg font-semibold text-[#1b1c19] dark:text-stone-200 block mb-6">Apothecary Lab OEM</span>
+<p class="font-body text-sm text-stone-500 max-w-xs mb-8">Redefining cosmetic manufacturing through scientific rigor and botanical artistry.</p>
+<p class="font-['Manrope'] text-sm tracking-wide uppercase text-stone-500">© 2024 Apothecary Lab OEM. All Rights Reserved.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<a class="font-['Manrope'] text-sm tracking-wide uppercase text-stone-500 hover:text-[#004D4D] dark:hover:text-teal-400 transition-all" href="#">Global Distribution</a>
+<a class="font-['Manrope'] text-sm tracking-wide uppercase text-stone-500 hover:text-[#004D4D] dark:hover:text-teal-400 transition-all" href="#">Legal Notice</a>
+<a class="font-['Manrope'] text-sm tracking-wide uppercase text-stone-500 hover:text-[#004D4D] dark:hover:text-teal-400 transition-all" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-['Manrope'] text-sm tracking-wide uppercase text-stone-500 hover:text-[#004D4D] dark:hover:text-teal-400 transition-all" href="#">Sustainability Report</a>
+<a class="font-['Manrope'] text-sm tracking-wide uppercase text-stone-500 hover:text-[#004D4D] dark:hover:text-teal-400 transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating R&D Button -->
+<button class="fixed right-0 top-1/2 -rotate-90 translate-x-1/2 z-[60] bg-tertiary text-on-tertiary px-8 py-3 rounded-t-xl font-label text-[10px] uppercase tracking-[0.2em] shadow-2xl transition-all hover:pr-10">
+        Need Something Custom? Talk to Our R&amp;D Team
+    </button>
+<!-- Lead Capture Popup (Hidden by Default) -->
+<!-- Usage: To show, remove 'hidden' class and add 'flex' -->
+<div class="hidden fixed inset-0 z-[100] bg-on-surface/40 backdrop-blur-sm items-center justify-center p-6">
+<div class="bg-surface max-w-lg w-full p-12 rounded-xl shadow-2xl relative">
+<button class="absolute top-6 right-6 text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="text-center">
+<h2 class="font-headline text-3xl italic text-primary mb-4">Access Full Catalog</h2>
+<p class="text-on-surface-variant mb-10 leading-relaxed">Please provide your details to receive our 2024 formula directory and ingredient breakdowns.</p>
+<form class="space-y-6">
+<div class="text-left">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 transition-all placeholder:text-outline-variant" placeholder="Jane Doe" type="text"/>
+</div>
+<div class="text-left">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block">Professional Email</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 transition-all placeholder:text-outline-variant" placeholder="jane@brand.com" type="email"/>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-md font-label uppercase tracking-widest mt-4 transition-all hover:bg-on-primary-fixed-variant" type="submit">Download PDF</button>
+<p class="text-[10px] text-outline text-center mt-6">By clicking download, you agree to our privacy policy regarding business outreach.</p>
+</form>
+</div>
+</div>
+</div>
+</body></html>

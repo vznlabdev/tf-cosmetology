@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#044f4f",
+              "surface-container": "#f0eee9",
+              "background": "#fbf9f4",
+              "tertiary-container": "#5a4000",
+              "surface-container-high": "#eae8e3",
+              "on-primary-container": "#80bdbc",
+              "tertiary-fixed-dim": "#e9c176",
+              "on-primary-fixed": "#002020",
+              "on-secondary-fixed-variant": "#494741",
+              "primary-container": "#004d4d",
+              "on-tertiary-fixed": "#261900",
+              "on-surface-variant": "#3f4848",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "primary": "#003434",
+              "tertiary": "#3e2b00",
+              "surface-variant": "#e4e2dd",
+              "inverse-surface": "#30312e",
+              "on-secondary-container": "#67645e",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed": "#1d1c17",
+              "surface": "#fbf9f4",
+              "secondary": "#615e58",
+              "on-surface": "#1b1c19",
+              "on-error-container": "#93000a",
+              "surface-container-low": "#f5f3ee",
+              "outline-variant": "#bfc8c8",
+              "on-primary": "#ffffff",
+              "surface-tint": "#296767",
+              "secondary-fixed": "#e7e2da",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#cac6be",
+              "primary-fixed-dim": "#94d1d1",
+              "on-background": "#1b1c19",
+              "tertiary-fixed": "#ffdea5",
+              "secondary-container": "#e7e2da",
+              "outline": "#6f7978",
+              "on-tertiary-container": "#d3ac64",
+              "surface-container-highest": "#e4e2dd",
+              "primary-fixed": "#b0eeed",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#fbf9f4",
+              "inverse-on-surface": "#f2f1ec",
+              "surface-dim": "#dbdad5",
+              "inverse-primary": "#94d1d1",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto bg-[#fbf9f4]/80 dark:bg-[#1b1c19]/80 backdrop-blur-xl z-50">
+<div class="text-2xl font-black text-[#003434] dark:text-[#fbf9f4] tracking-tighter font-['Newsreader']">DERMA-EDITION</div>
+<div class="hidden md:flex items-center gap-10 font-['Newsreader'] tracking-tight font-semibold">
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] transition-colors" href="#">Formulation</a>
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] transition-colors" href="#">Sustainability</a>
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] transition-colors" href="#">Manufacturing</a>
+<a class="text-[#003434] dark:text-[#fbf9f4] border-b-2 border-[#003434] dark:border-[#fbf9f4] pb-1" href="#">Journal</a>
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-[#003434] dark:text-[#bfc8c8] cursor-pointer scale-95 duration-300 ease-in-out hover:bg-[#f5f3ee]/50 p-2 rounded-full">search</span>
+<span class="material-symbols-outlined text-[#003434] dark:text-[#bfc8c8] cursor-pointer scale-95 duration-300 ease-in-out hover:bg-[#f5f3ee]/50 p-2 rounded-full" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="pt-32 px-8 max-w-screen-2xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-20 max-w-3xl">
+<h1 class="font-headline text-6xl md:text-8xl tracking-tighter text-primary mb-6 italic">Insights</h1>
+<p class="font-body text-xl md:text-2xl text-outline leading-relaxed font-light">
+                Trends, ingredients and industry knowledge to help you build a better brand.
+            </p>
+</header>
+<!-- Featured Article -->
+<section class="mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-on-surface/5">
+<div class="lg:col-span-7 h-[500px] lg:h-[600px] relative overflow-hidden">
+<img alt="Laboratory research" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Close-up of high-end laboratory glassware with emerald green botanical extracts and soft golden backlighting in a clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6Y5gxJG7Dt7AjXdGBK21T2FBp0qkjkwD48Xu31Fd4KHN7Ld7KvoTHyl-THzE9-VAXL09t34NMIZjpMUSnzdFe-CB-zg26H7a2iB_zykjoS64aFA_HJicAAkdPq5-8uBu5Oh3waaH_9qchUPF3QZ8VJEecjA3tlAbCz8NTln_mhm-H-5zSBj1fn6wXaLztR7ctxNH-lA9hAGoJZsfcAW3a8AmGdJ9Ana5DKvB4nioRT2ZbkCTGtWy9AbMGpE3gZIi277iJg-AqwI"/>
+</div>
+<div class="lg:col-span-5 p-12 lg:p-16 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-8">
+<span class="font-label text-xs uppercase tracking-[0.2em] px-3 py-1 bg-primary text-on-primary rounded-full">Industry News</span>
+<span class="font-label text-xs uppercase tracking-widest text-outline">5 min read</span>
+</div>
+<h2 class="font-headline text-4xl lg:text-5xl leading-[1.1] mb-6 text-on-surface tracking-tight">The Future of Sustainable Formulation</h2>
+<p class="font-body text-lg text-on-surface-variant mb-10 leading-relaxed opacity-90">
+                        Explore how new botanical extractions are replacing synthetic alternatives without compromising on efficacy. We delve into the molecular shifts defining the next decade of luxury skincare development.
+                    </p>
+<a class="group flex items-center gap-3 font-label font-bold text-primary uppercase tracking-widest text-sm" href="#">
+                        Read the Thesis
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Filters -->
+<nav class="flex flex-wrap items-center gap-x-10 gap-y-4 mb-16 pb-6 border-b border-outline-variant/20">
+<button class="font-label text-sm uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-2">All</button>
+<button class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary transition-colors pb-2">Ingredients</button>
+<button class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary transition-colors pb-2">Trends</button>
+<button class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary transition-colors pb-2">Industry News</button>
+<button class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary transition-colors pb-2">Brand Building Guides</button>
+</nav>
+<!-- Article Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
+<!-- Card 1 -->
+<article class="group">
+<div class="aspect-[4/5] mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Ingredients" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist composition of dried botanical elements and smooth ceramic stones on a warm textured paper background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTTDreXI-ZRoPJh_obuXVga4KFu9c0ibggGgjBWIXvpRHsYcPvDFplLVcf8fpK7DkF0wdd2a2x4YZ2YLVCN9wNvRw8aXAb26oKrlvrjUDABg4P-mf9WYinnfgyV8jfMtlMK67ecMHqvxFYBSWgwiqxDPM7zdBm9NGu29enFW-qWoqh3JmF3eEcwiJPOGeTEmQ4VFkE9Sx1sDV9VnDm6-Zd18sXmFIJ8jbl7DW6Si9wRRC7sopffa9UZepozxb-xcnl-TbnPTTUr7s"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest px-2 py-0.5 border border-outline/30 rounded text-outline">Ingredients</span>
+</div>
+<h3 class="font-headline text-2xl mb-4 text-on-surface leading-tight group-hover:text-primary transition-colors">The Niacinamide Paradox: Concentration vs. Sensitivity</h3>
+<p class="font-body text-on-surface-variant line-clamp-2 mb-6 text-sm leading-relaxed">Recent clinical trials suggest that the 'more is better' approach in vitamin B3 concentration may be reaching a point of diminishing returns.</p>
+<a class="inline-flex items-center font-label text-xs font-bold uppercase tracking-widest text-primary border-b border-transparent hover:border-primary transition-all" href="#">Read More</a>
+</article>
+<!-- Card 2 -->
+<article class="group">
+<div class="aspect-[4/5] mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Trends" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-fashion macro shot of iridescent cosmetic gel textures with prismatic light reflections and fluid shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6rTCa75vyRogL_rMV33nb4A_7W42PEJxnbUA_tQkNh-e65IluzV2TOsPjmyN0oImoMFimrTBkBy-juYZ4YHa7FY6EvQOrgy_HU1S2PNKM9rT3iJUcJQL2Vt1d3-PibD6ozWlZ8_gmBF733jdn6tXEPYqMig6p0cJOS6iLhq88GvsnhU0e8umlpGYLB6sd2CHIbYRLI-1u7_xCIforjIdQWNgw33k0OqOAuGMi3u53CX_8ffBOJ-0dialCdsKILXBiyX_OKzW38Cs"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest px-2 py-0.5 border border-outline/30 rounded text-outline">Trends</span>
+</div>
+<h3 class="font-headline text-2xl mb-4 text-on-surface leading-tight group-hover:text-primary transition-colors">Neuro-Cosmetics: The Sensory Connection</h3>
+<p class="font-body text-on-surface-variant line-clamp-2 mb-6 text-sm leading-relaxed">Understanding how topical applications interact with neural pathways to influence mood and perceived well-being.</p>
+<a class="inline-flex items-center font-label text-xs font-bold uppercase tracking-widest text-primary border-b border-transparent hover:border-primary transition-all" href="#">Read More</a>
+</article>
+<!-- Card 3 -->
+<article class="group">
+<div class="aspect-[4/5] mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Industry" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Monochromatic view of a high-tech robotic assembly line for luxury skincare packaging in a sterile facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXvCOa8KzJC6kLRI7l5bda07D4B9Q04XWE5kJs6kswNU5ncZtviF-7jbIEADZHe4CATEaWAQ2gmwaJ80l_SyYNK60dDDpOhSTgBU70nfbS_LbogOh8SHjIH5FJ7nPiecn8AgsqPjwcMi7_b0M87MBLiDMCSDZLObPueXsje-42Xxd0k45bO0CYNs99XTzsRzNcmM-jFb_hSEpK62xlJQblcABuLpDEbrps2Cds0zpAEoyzmCVpjsUNKFbEPaK6dGy127l9SLRPVZg"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest px-2 py-0.5 border border-outline/30 rounded text-outline">Industry</span>
+</div>
+<h3 class="font-headline text-2xl mb-4 text-on-surface leading-tight group-hover:text-primary transition-colors">Supply Chain Resilience in a Post-Globalized Era</h3>
+<p class="font-body text-on-surface-variant line-clamp-2 mb-6 text-sm leading-relaxed">Strategic insights into localizing manufacturing nodes to mitigate international logistics volatility.</p>
+<a class="inline-flex items-center font-label text-xs font-bold uppercase tracking-widest text-primary border-b border-transparent hover:border-primary transition-all" href="#">Read More</a>
+</article>
+<!-- Card 4 -->
+<article class="group">
+<div class="aspect-[4/5] mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Guides" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Flat lay of elegant minimalist product mockups with clean labels and soft shadows on a beige stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjO2WZfE-Kr0Av7hz5-4T1cmAV1biRj3LLDOf9n7sYelxQlO1wsxlKw8q1vlBDeov4QAmSNt-_ZphwACh1AZRR2wjJqSDdfhb3EwHP9DMsiybsumxSB7y-m_orlPKhCvSV79Y7c7dRZ20QCqVHiPowjiJVgwnyFR8csnDpNAXLW1jTtrpeysaOBpwoHzQd7MZgJ1Uci3eIUXao2fHrr6RXEw8RaOXw6cZJHOUHCti60kzEmXOyJZUjMgAMe0gqPgWKRM3PYYYFEok"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest px-2 py-0.5 border border-outline/30 rounded text-outline">Guides</span>
+</div>
+<h3 class="font-headline text-2xl mb-4 text-on-surface leading-tight group-hover:text-primary transition-colors">Defining Your Brand’s Scientific Signature</h3>
+<p class="font-body text-on-surface-variant line-clamp-2 mb-6 text-sm leading-relaxed">A step-by-step framework for founders to translate laboratory data into a compelling consumer-facing narrative.</p>
+<a class="inline-flex items-center font-label text-xs font-bold uppercase tracking-widest text-primary border-b border-transparent hover:border-primary transition-all" href="#">Read More</a>
+</article>
+<!-- Card 5 -->
+<article class="group">
+<div class="aspect-[4/5] mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Ingredients" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro photography of blue algae structures under a microscope with deep teal and cyan lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcRYMLmERjP1LU0eDUB-tphH5GqAjKXT-4LRDbyEDYQbWMS_ltzMdPXoWJokOHnDlR0AGW20Dc3x8YSJ5ar_N5GtzmUilXG5W4Bi3eukRE4blMnnML6MBSdFp43lf8DowNb7CEg1mW9O0rOQABjR0hVGHfh01mowvYS074urLKb90qJjl_e4P3UG0ps_TeDidg8CMxn1uaqaWTC9cqNGuWz1BGYHmcrBZQJtNUTlVaosgIXZL9CxNz0EoK99mZ_2Ba0ncp4Zk5rzU"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest px-2 py-0.5 border border-outline/30 rounded text-outline">Ingredients</span>
+</div>
+<h3 class="font-headline text-2xl mb-4 text-on-surface leading-tight group-hover:text-primary transition-colors">The Rise of Extremophiles in Skin Bio-Hacking</h3>
+<p class="font-body text-on-surface-variant line-clamp-2 mb-6 text-sm leading-relaxed">How organisms from the harshest environments on Earth are providing the next generation of DNA-repair enzymes.</p>
+<a class="inline-flex items-center font-label text-xs font-bold uppercase tracking-widest text-primary border-b border-transparent hover:border-primary transition-all" href="#">Read More</a>
+</article>
+<!-- Card 6 -->
+<article class="group">
+<div class="aspect-[4/5] mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Trends" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artistic composition of glass test tubes containing clear fluids and soft white flower petals in a warm glowing light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQVPHuApU5fHz2dVvOgz1SQpR1fMmOdliJRdvqPxWrDNzqmxhM95kajsB4RWn3bYLU8KeqjDfLTlO8husHJHW2NsMo7uIuMYaMOH8FH5dIjzhVQsyKsN1XtkWU--rqz1Y6SrNd0EEnlv1UDwOSHiEiLjF5Rn_aEWHRXIe3U8bFotFlM6B-NfwOeNEL4hndGjyLax8_ZLh_aAlRcBfSPTHiJUAgCA1o_BvWoc5w_Y3yioW3_i7m6TMgwBzITkreyoq7bUF6ISqnpOM"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest px-2 py-0.5 border border-outline/30 rounded text-outline">Trends</span>
+</div>
+<h3 class="font-headline text-2xl mb-4 text-on-surface leading-tight group-hover:text-primary transition-colors">Circular Beauty: Beyond Recyclable Packaging</h3>
+<p class="font-body text-on-surface-variant line-clamp-2 mb-6 text-sm leading-relaxed">Analyzing the shift toward upcycled ingredient sourcing and zero-waste extraction processes in the OEM space.</p>
+<a class="inline-flex items-center font-label text-xs font-bold uppercase tracking-widest text-primary border-b border-transparent hover:border-primary transition-all" href="#">Read More</a>
+</article>
+</section>
+<!-- Newsletter Bar -->
+<section class="mt-32 p-12 lg:p-20 rounded-xl bg-surface-container-high relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-full blur-3xl translate-x-1/2"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+<div class="max-w-xl text-center lg:text-left">
+<h2 class="font-headline text-3xl md:text-5xl text-primary mb-4 leading-tight">Get Monthly Beauty Industry Insights</h2>
+<p class="font-body text-on-surface-variant text-lg">Join 12,000+ brand founders and R&amp;D specialists receiving our curated intelligence report.</p>
+</div>
+<form class="w-full lg:w-auto flex flex-col sm:flex-row gap-4">
+<div class="relative flex-grow min-w-[300px]">
+<input class="w-full bg-surface-container-lowest border-none px-6 py-4 rounded-lg focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline/50 font-label" placeholder="professional@email.com" type="email"/>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label uppercase tracking-widest text-sm font-bold hover:bg-on-primary-fixed-variant transition-colors whitespace-nowrap" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center gap-8 border-t border-[#bfc8c8]/15 bg-[#f5f3ee] dark:bg-[#1b1c19] py-16 px-8 mt-24">
+<div class="flex flex-col gap-2 items-center md:items-start">
+<div class="font-['Newsreader'] text-xl italic text-[#003434] dark:text-[#fbf9f4]">DERMA-EDITION</div>
+<p class="font-['Manrope'] text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] opacity-80">© 2024 DERMA-EDITION OEM. ALL RIGHTS RESERVED. THE HUMAN LABORATORY™</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] opacity-80 hover:opacity-100 hover:text-[#003434] transition-opacity underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] opacity-80 hover:opacity-100 hover:text-[#003434] transition-opacity underline-offset-4 hover:underline" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] opacity-80 hover:opacity-100 hover:text-[#003434] transition-opacity underline-offset-4 hover:underline" href="#">Ingredient Transparency</a>
+<a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] opacity-80 hover:opacity-100 hover:text-[#003434] transition-opacity underline-offset-4 hover:underline" href="#">Manufacturing Standards</a>
+<a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] opacity-80 hover:opacity-100 hover:text-[#003434] transition-opacity underline-offset-4 hover:underline" href="#">Press Kit</a>
+</div>
+</footer>
+</body></html>

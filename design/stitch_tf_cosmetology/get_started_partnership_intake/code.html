@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Get Started | CosmeticLab Manufacturing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#eae8e3",
+              "outline": "#6f7978",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "tertiary-fixed": "#ffdea5",
+              "inverse-primary": "#94d1d1",
+              "on-tertiary-fixed": "#261900",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#d3ac64",
+              "on-error-container": "#93000a",
+              "surface": "#fbf9f4",
+              "on-secondary-fixed": "#1d1c17",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#e9c176",
+              "tertiary-container": "#5a4000",
+              "surface-container": "#f0eee9",
+              "primary-container": "#004d4d",
+              "on-secondary-container": "#67645e",
+              "on-surface": "#1b1c19",
+              "surface-container-low": "#f5f3ee",
+              "on-primary-fixed-variant": "#044f4f",
+              "primary-fixed-dim": "#94d1d1",
+              "secondary": "#615e58",
+              "primary-fixed": "#b0eeed",
+              "tertiary": "#3e2b00",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e4e2dd",
+              "outline-variant": "#bfc8c8",
+              "on-background": "#1b1c19",
+              "inverse-on-surface": "#f2f1ec",
+              "surface-dim": "#dbdad5",
+              "on-primary-fixed": "#002020",
+              "inverse-surface": "#30312e",
+              "on-surface-variant": "#3f4848",
+              "on-primary-container": "#80bdbc",
+              "secondary-fixed": "#e7e2da",
+              "secondary-container": "#e7e2da",
+              "primary": "#003434",
+              "on-secondary-fixed-variant": "#494741",
+              "surface-bright": "#fbf9f4",
+              "background": "#fbf9f4",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e4e2dd",
+              "surface-tint": "#296767",
+              "secondary-fixed-dim": "#cac6be",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Manrope', sans-serif;
+        }
+        .serif-text {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#fbf9f4] dark:bg-stone-950/80 backdrop-blur-md">
+<nav class="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#003434] dark:text-teal-500">CosmeticLab</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-[#1b1c19]/60 dark:text-stone-400 font-['Newsreader'] tracking-tight hover:text-[#003434] transition-colors" href="#">Solutions</a>
+<a class="text-[#1b1c19]/60 dark:text-stone-400 font-['Newsreader'] tracking-tight hover:text-[#003434] transition-colors" href="#">Our Process</a>
+<a class="text-[#003434] dark:text-teal-400 font-semibold font-['Newsreader'] tracking-tight" href="#">Get Started</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003434] cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-24 max-w-3xl">
+<h1 class="text-6xl md:text-7xl font-headline font-semibold tracking-tight leading-tight mb-8">
+                Let's Build Something Together
+            </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-body font-light leading-relaxed">
+                Tell us about your project and we will get back to you within 24 hours with a custom plan.
+            </p>
+</section>
+<!-- Form Layout: Asymmetric 2-column Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Intake Form Wizard (Left Column) -->
+<div class="lg:col-span-8">
+<form class="space-y-16">
+<!-- Step 1: Big Clickable Cards -->
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="text-xs font-label uppercase tracking-widest text-outline">Step 01</span>
+<h2 class="text-3xl font-headline italic">I want to...</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="group relative flex flex-col justify-between p-8 bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all border-b-2 border-transparent focus-within:border-primary">
+<input class="sr-only" name="goal" type="radio" value="launch"/>
+<span class="material-symbols-outlined text-primary mb-12" data-icon="rocket_launch">rocket_launch</span>
+<span class="text-lg font-headline font-semibold">Launch a New Brand</span>
+</label>
+<label class="group relative flex flex-col justify-between p-8 bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all border-b-2 border-transparent focus-within:border-primary">
+<input class="sr-only" name="goal" type="radio" value="add"/>
+<span class="material-symbols-outlined text-primary mb-12" data-icon="add_circle">add_circle</span>
+<span class="text-lg font-headline font-semibold">Add Products to My Existing Line</span>
+</label>
+<label class="group relative flex flex-col justify-between p-8 bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all border-b-2 border-transparent focus-within:border-primary">
+<input class="sr-only" name="goal" type="radio" value="distribute"/>
+<span class="material-symbols-outlined text-primary mb-12" data-icon="public">public</span>
+<span class="text-lg font-headline font-semibold">Distribute Products in My Country</span>
+</label>
+<label class="group relative flex flex-col justify-between p-8 bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all border-b-2 border-transparent focus-within:border-primary">
+<input class="sr-only" name="goal" type="radio" value="else"/>
+<span class="material-symbols-outlined text-primary mb-12" data-icon="more_horiz">more_horiz</span>
+<span class="text-lg font-headline font-semibold">Something Else</span>
+</label>
+</div>
+</div>
+<!-- Step 2: Checkboxes -->
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="text-xs font-label uppercase tracking-widest text-outline">Step 02</span>
+<h2 class="text-3xl font-headline italic">I am interested in...</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Skincare</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Body Care</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Supplements</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Soap</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Makeup</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Other</span>
+</label>
+</div>
+</div>
+<!-- Step 3: Radio Options -->
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="text-xs font-label uppercase tracking-widest text-outline">Step 03</span>
+<h2 class="text-3xl font-headline italic">My estimated starting quantity is...</h2>
+</div>
+<div class="flex flex-wrap gap-4">
+<label class="px-6 py-3 bg-surface-container rounded-full cursor-pointer hover:bg-surface-container-highest transition-colors flex items-center gap-2">
+<input class="text-primary border-outline-variant focus:ring-primary" name="qty" type="radio"/>
+<span class="text-sm font-medium">Under 500 Units</span>
+</label>
+<label class="px-6 py-3 bg-surface-container rounded-full cursor-pointer hover:bg-surface-container-highest transition-colors flex items-center gap-2">
+<input class="text-primary border-outline-variant focus:ring-primary" name="qty" type="radio"/>
+<span class="text-sm font-medium">500 to 2000</span>
+</label>
+<label class="px-6 py-3 bg-surface-container rounded-full cursor-pointer hover:bg-surface-container-highest transition-colors flex items-center gap-2">
+<input class="text-primary border-outline-variant focus:ring-primary" name="qty" type="radio"/>
+<span class="text-sm font-medium">2000 to 5000</span>
+</label>
+<label class="px-6 py-3 bg-surface-container rounded-full cursor-pointer hover:bg-surface-container-highest transition-colors flex items-center gap-2">
+<input class="text-primary border-outline-variant focus:ring-primary" name="qty" type="radio"/>
+<span class="text-sm font-medium">5000 Plus</span>
+</label>
+</div>
+</div>
+<!-- Step 4: Contact Details -->
+<div class="space-y-12">
+<div class="flex items-center gap-4">
+<span class="text-xs font-label uppercase tracking-widest text-outline">Step 04</span>
+<h2 class="text-3xl font-headline italic">Your Information</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+<div class="space-y-2">
+<label class="text-sm font-label text-on-surface-variant">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 transition-all" placeholder="Enter your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label text-on-surface-variant">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 transition-all" placeholder="name@company.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label text-on-surface-variant">Phone Number</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 transition-all" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label text-on-surface-variant">Company Name (Optional)</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 transition-all" placeholder="Your brand name" type="text"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-sm font-label text-on-surface-variant">Your Message (Optional)</label>
+<textarea class="w-full bg-surface-container-low rounded-xl border-0 focus:ring-2 focus:ring-primary p-4 transition-all" placeholder="Tell us more about your vision..." rows="4"></textarea>
+</div>
+</div>
+<button class="w-full md:w-auto px-12 py-5 bg-primary text-on-primary rounded-md font-headline text-xl font-semibold hover:shadow-2xl transition-all hover:scale-[1.02] active:scale-95" type="submit">
+                            Submit Inquiry
+                        </button>
+</div>
+</form>
+<!-- Post-submission Info -->
+<div class="mt-24 p-12 bg-surface-container-low rounded-2xl">
+<h3 class="text-2xl font-headline italic mb-8">Thanks. Here is what happens next.</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">1</div>
+<p class="text-on-surface font-medium leading-relaxed">We review your brief within 24 hours</p>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold">2</div>
+<p class="text-on-surface font-medium leading-relaxed">We send relevant samples and pricing</p>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold">3</div>
+<p class="text-on-surface font-medium leading-relaxed">You decide if we are the right fit.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Alternative Contact & Info (Right Column) -->
+<aside class="lg:col-span-4 space-y-12 lg:sticky lg:top-32">
+<!-- Contact Card -->
+<div class="bg-surface-container p-8 rounded-2xl space-y-8">
+<h4 class="text-xl font-headline font-bold">Direct Channels</h4>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="phone">phone</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline mb-1">Call Us</p>
+<p class="font-medium">+66 2 123 4567</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="chat_bubble">chat_bubble</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline mb-1">LINE &amp; WhatsApp</p>
+<p class="font-medium">ID: CosmeticLab_Global</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="mail">mail</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline mb-1">Email</p>
+<p class="font-medium">partners@cosmeticlab.com</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="schedule">schedule</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline mb-1">Office Hours</p>
+<p class="font-medium text-sm leading-relaxed">Mon-Fri 9am-6pm<br/>Closed on Weekends</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="space-y-4">
+<div class="w-full h-48 rounded-2xl overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale opacity-50" data-alt="abstract minimalist map of a city center with soft grey tones and clean lines" data-location="Bangkok, Thailand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyLf6Bk9KyPc6kbHkW4hFT-CH7vevol56MtqdQ4FawjlJy4Q8epB2VyA5uY-IBoHTlOdsv04TlOwWP7NR6L_DjkFuJqDTMRzWiGccx7JIEp952ZrWWh3Ltd164TVplXO2-zaZgvS7EMV-Q0h_ba25EN1nu2N1rFJsDksR6yY57QwPoW_xnWVRWvj9x43-4Ze4JnNTG2VuBFlIBaIzrvuOZR-2-n7nxjkIYzN-Ot8t0AAEPWpq-24h91cFEGL9402LfvD1gKhkesLQ"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-12 h-12 bg-primary/20 backdrop-blur-md rounded-full flex items-center justify-center animate-pulse">
+<div class="w-4 h-4 bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant italic text-center">Corporate Headquarters, Bangkok CBD</p>
+</div>
+<!-- Testimonial/Trust Badge -->
+<div class="p-8 border border-outline-variant/15 rounded-2xl">
+<p class="font-headline italic text-lg text-primary mb-4 leading-relaxed">
+                        "Their team's attention to detail during the sampling phase was exactly what our brand needed to scale."
+                    </p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
+<span class="text-[10px] font-bold">EK</span>
+</div>
+<p class="text-sm font-label">Elena Kostas, <span class="text-outline">Founder of Aura Skin</span></p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3ee] dark:bg-stone-900 border-t border-[#bfc8c8]/15">
+<div class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="space-y-2">
+<div class="text-lg font-semibold font-['Newsreader'] text-[#003434]">CosmeticLab Manufacturing</div>
+<p class="font-['Manrope'] text-sm tracking-wide text-[#1b1c19]/70 dark:text-stone-400">© 2024 CosmeticLab Manufacturing. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-sm tracking-wide text-[#1b1c19]/70 dark:text-stone-400 hover:text-[#003434] transition-all" href="#">Contact Us</a>
+<span class="font-['Manrope'] text-sm tracking-wide text-[#1b1c19]/70 dark:text-stone-400">Office Hours: Mon-Fri 9am-6pm</span>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#1b1c19]/70 dark:text-stone-400 hover:text-[#003434] transition-all" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#1b1c19]/70 dark:text-stone-400 hover:text-[#003434] transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

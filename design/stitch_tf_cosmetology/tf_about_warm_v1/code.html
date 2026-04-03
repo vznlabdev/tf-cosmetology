@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TF About - The Human Laboratory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#3e2b00",
+                        "primary-fixed-dim": "#94d1d1",
+                        "background": "#fbf9f4",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#d3ac64",
+                        "on-primary-container": "#80bdbc",
+                        "on-background": "#1b1c19",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#e7e2da",
+                        "primary": "#003434",
+                        "surface": "#fbf9f4",
+                        "primary-container": "#004d4d",
+                        "on-surface": "#1b1c19",
+                        "inverse-surface": "#30312e",
+                        "surface-variant": "#e4e2dd",
+                        "secondary": "#615e58",
+                        "inverse-primary": "#94d1d1",
+                        "on-tertiary-fixed": "#261900",
+                        "tertiary-fixed": "#ffdea5",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#b0eeed",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#3f4848",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#e7e2da",
+                        "surface-container": "#f0eee9",
+                        "surface-container-low": "#f5f3ee",
+                        "secondary-fixed-dim": "#cac6be",
+                        "on-secondary-fixed": "#1d1c17",
+                        "outline": "#6f7978",
+                        "on-primary-fixed-variant": "#044f4f",
+                        "surface-container-highest": "#e4e2dd",
+                        "outline-variant": "#bfc8c8",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-tint": "#296767",
+                        "on-secondary-container": "#67645e",
+                        "on-primary-fixed": "#002020",
+                        "tertiary-container": "#5a4000",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "surface-container-high": "#eae8e3",
+                        "surface-bright": "#fbf9f4",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dbdad5",
+                        "on-secondary-fixed-variant": "#494741"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Manrope', sans-serif;
+        }
+        .serif-display {
+            font-family: 'Newsreader', serif;
+            letter-spacing: -0.01em;
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto bg-[#fbf9f4]/80 dark:bg-[#1b1c19]/80 backdrop-blur-xl">
+<div class="text-2xl font-serif tracking-tighter text-[#003434] dark:text-[#fbf9f4]">TF Cosmetology</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] hover:opacity-80 transition-opacity duration-300 font-label text-sm uppercase tracking-wider" href="#">Collections</a>
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] hover:opacity-80 transition-opacity duration-300 font-label text-sm uppercase tracking-wider" href="#">Formulations</a>
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] hover:opacity-80 transition-opacity duration-300 font-label text-sm uppercase tracking-wider" href="#">Science</a>
+<a class="text-[#003434] dark:text-[#fbf9f4] border-b-2 border-[#003434] dark:border-[#fbf9f4] pb-1 font-label text-sm uppercase tracking-wider" href="#">Heritage</a>
+<a class="text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#003434] hover:opacity-80 transition-opacity duration-300 font-label text-sm uppercase tracking-wider" href="#">Inquiry</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-label text-sm uppercase tracking-widest hover:opacity-90 transition-all scale-98 active:scale-95 shadow-sm">Consultation</button>
+</div>
+</header>
+<main>
+<!-- Hero Section: Editorial Intro -->
+<section class="relative pt-24 pb-32 px-8 overflow-hidden">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-7">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-outline mb-6 block">Our Heritage</span>
+<h1 class="serif-display text-6xl md:text-8xl leading-[1.05] text-primary mb-8 text-balance">The bridge between <span class="italic">botanical soul</span> and clinical rigor.</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">TF Cosmetology was founded on a singular premise: that the skin is a living laboratory, deserving of both ancestral wisdom and the precision of modern science.</p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-highest overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90" data-alt="Close-up of a vintage glass apothecary bottle sitting on a stone surface with soft morning light and herbal shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCs4LwHFwQ5Q-QDn5dFBqkcSagfaztWEmXCmPvePyHlikN1aOcQa2J3BZPsXptiKvPEO2aPVyo64cr1Dyi2Sg4ctTSuXgEZrkvw0e_AFlUJDdJ4hyRaqnFM9whlLnqd2KqqVaSqTNZYC8MEt8ISGNajTn6nv5XJTrNvPNSP2qVsHk9LSvxgJWVxiTuDXabbJAYBUxHVZTBKDmtEAqK84ZrW1sp7QX8kAxuX6J-jMUp18C563_WjGTLA6Igir9XMZqIk0EdGg4Q31k"/>
+</div>
+<div class="absolute -bottom-8 -left-8 p-8 bg-surface-container-lowest shadow-2xl rounded-lg max-w-[240px]">
+<p class="serif-display text-3xl text-tertiary">1924</p>
+<p class="font-label text-[10px] uppercase tracking-widest mt-2 text-outline">The First Formulation</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section: Asymmetric Bento -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-screen-xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between h-full min-h-[320px] shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="biotech">biotech</span>
+<div>
+<h3 class="serif-display text-2xl mb-4">Cellular Precision</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Every molecule is mapped. We don't just formulate; we engineer pathways for active delivery at the deepest layers.</p>
+</div>
+</div>
+<!-- Value 2 -->
+<div class="bg-primary text-on-primary p-10 rounded-xl flex flex-col justify-between h-full min-h-[320px] shadow-lg">
+<span class="material-symbols-outlined text-4xl text-primary-fixed-dim" data-icon="eco">eco</span>
+<div>
+<h3 class="serif-display text-2xl mb-4">Living Organics</h3>
+<p class="font-body text-sm opacity-80 leading-relaxed">We source from biodynamic estates where soil health dictates ingredient potency. Science honors what nature perfected.</p>
+</div>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between h-full min-h-[320px] shadow-sm">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="history_edu">history_edu</span>
+<div>
+<h3 class="serif-display text-2xl mb-4">Ethical Legacy</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">A century of non-toxic innovation. We reject short-term results for long-term dermatological health and integrity.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- History: Editorial Timeline -->
+<section class="py-32 px-8 bg-background">
+<div class="max-w-screen-lg mx-auto">
+<h2 class="serif-display text-4xl mb-20 text-center">A Century of Inquiry</h2>
+<div class="space-y-24">
+<!-- Decade 1 -->
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-video object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-700" data-alt="Black and white photograph of a clinical laboratory from the 1920s with glass beakers and scientific equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUBaxyDP0OqWvR4vJisKMuFPwyANqabWAr_f9w1oJPXItdvN6MM_nQmAOKwmYYIawcFjBEMCqi2aro7-KYLUGPQyl1-nHVP0WxfB7BxkySFPiiFqHPPqGcYVFDRgX7o-orGIo5d9956MvxkNmj9xi_XJf5-WViVxpX9iAcTdG69n1thg4iJRrWHfdkRp3IT8I5Jyfg7ihWpPYD_k4MUZ4Vwx6T-x2yblMiHquiQoArGfrljeK9jHuu4u2KGmJ2Xx7CsZ4PDfCC_AU"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label text-tertiary font-bold tracking-widest text-xs">FOUNDATION</span>
+<h3 class="serif-display text-3xl mt-2 mb-4">1924: The Alchemist's Study</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Dr. Thomas Fletcher opens his first laboratory in London, merging traditional herbalism with early chemical isolation techniques to treat post-war skin trauma.</p>
+</div>
+</div>
+<!-- Decade 2 -->
+<div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-video object-cover rounded-lg shadow-inner" data-alt="Modern microscopic view of skin cell structure with soft teal and white lighting and professional depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-km2L1KWJprWn-IbNV1M1pf7qW22LXbr1ndBvQ2lWCKDK49obYmydb3m9TenbxNq-B7xeJ9llA7gqclsgsqf8fmcYyUDC_o9xPqSz3SpsNjuIk6TmaHBDbl8CMKXCAtNmdE8pJAmSVARwUPLTiWhjAE18An9gzjb4a25rBXK879U1WURF216avKS7WCSlHQTlWfyUXGOd-_XnMqeOV1baZlqsHiDWSs1fVvIHs4aQBshM-QwBFmcXUvxdmr2lvfF2Xoh-gLhXGAY"/>
+</div>
+<div class="w-full md:w-1/2 text-right md:text-left">
+<span class="font-label text-tertiary font-bold tracking-widest text-xs">EVOLUTION</span>
+<h3 class="serif-display text-3xl mt-2 mb-4">1970: The Peptide Revolution</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">TF Cosmetology leads the industry in synthesizing plant-based peptides, setting a new global standard for non-invasive age-well treatments.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership: The Modern Laboratory Team -->
+<section class="py-32 px-8 bg-surface-container-highest/30">
+<div class="max-w-screen-xl mx-auto">
+<div class="mb-16">
+<h2 class="serif-display text-4xl mb-4">The Custodians</h2>
+<p class="font-body text-on-surface-variant max-w-2xl">The brilliant minds continuing our legacy of warm clinical excellence.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Member 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" data-alt="Portrait of a female scientist in a minimalist modern lab setting with soft natural light and professional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXpNQU-0y9dgwQakH5CPY6Tinmfhxc4vvi1RlvcwT2ia0W98xkEUmSWjK0X-iMi0wAT6BG1yuURhgdy6u3_ulJfSOiUkCsCw4_3u_wfltXQ54aofdp7CN9_YEcfbMn1wdKLn5mIMVuFmYNbItCDM6TZFX8imT-JpOA5sCSTJjTZnhzJELJFlIAMLSj7a_TprRfKaH7KSoVT9fD34HF4LfjR5ZeFq5Zk53nHMdNSho0ZUNV2de-Kw9l1u_-VdVl8SMrOJD5fQtS660"/>
+</div>
+<h4 class="serif-display text-xl">Dr. Elena Rossi</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mt-1">Chief Science Officer</p>
+</div>
+<!-- Member 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" data-alt="Portrait of a sophisticated man in his 50s with a clean clinical aesthetic and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM-X428fTX2HSuxFQF8hAJMgqIuRc2JT_bR20rjrxiPkldLzr-EoOEqVp7KT95V5XfhNUZSeAx4k980idCKZ-bMPAlX23gRf-Wev-RJ49gzfbK3gP4lymlByAQF5grdeUHAKmf6H1Y8keh9NHPSleX5JzA5xPQ_YFWGaLspFSXTBwJGELXPuh--aMv1vS0lLDEwN5XGUMvhSKqVO0oCWexvJbGEAb0cGqKVn_HsiikFq2fDhyvrXsu7JX5rFs2xcAasKw8pl8fA4s"/>
+</div>
+<h4 class="serif-display text-xl">Julian Vane</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mt-1">Heritage Director</p>
+</div>
+<!-- Member 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" data-alt="Close-up of a professional woman with radiant skin in a bright minimalist office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOyC6a9UyUDQlZ5frvQSAOehqmsRG6zdZwdfxPzhVSL5zUot-oyfeE3x8bjfSsp3Zin16goH6t8AT6EYxyArtSoLoFP__ExhwaJkOsJ-nBrC_0jNDMydihnak7VJBQJcSFsi79gWul2RGbskoh5SnmBinY5EKLLXES9c5gwO0DNeFls7VUrHgZhI4wURalv7ez-gc0nDl6xTWcFWWlG9Qgk9oixrxc0yD31vi-SCaswrqotrwNNMUHStOt3R2cqwSKuc7yXFqHQnw"/>
+</div>
+<h4 class="serif-display text-xl">Sarah Chen</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mt-1">Lead Formulator</p>
+</div>
+<!-- Member 4 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" data-alt="Professional man with glasses in a creative studio space with warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2E1pxULRp0Cu6_D2426VZ3n7j7TY_nCgdEj1PAJX3zq-VQaEtkgar9khmtrnPRv4OdHoZ9CWbJktlG8Y9oA9Pp-UqnPumY0suqZscTdRiFio4FtsPx7r5f0mWzXpX1DCzKNCPE8bxqn7zau0-O7_WLN1QBToOffy2l3H5QcGY541Eg7ojhAxuqv40CnhQo-trjxKsjI7Jn-Ar336YlaBe0fmN2RakuqAkaw7yVCjYScvviiuCQSjVYhdG3WoHb0VtksZsOb48NBU"/>
+</div>
+<h4 class="serif-display text-xl">Marcus Thorne</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mt-1">Innovation Lead</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-24 px-8 border-t border-outline-variant/15">
+<div class="max-w-screen-md mx-auto text-center">
+<h2 class="serif-display text-4xl mb-6">Experience the Formulation.</h2>
+<p class="font-body text-on-surface-variant mb-10">Join our mailing list for early access to clinical trials and heritage collection releases.</p>
+<form class="flex flex-col sm:flex-row gap-4 items-end">
+<div class="flex-1 w-full">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2 text-left">Your Email Address</label>
+<input class="w-full bg-surface-container-low border-none border-b-2 border-outline focus:border-primary focus:ring-0 px-0 py-3 transition-all" placeholder="name@laboratory.com" type="email"/>
+</div>
+<button class="bg-primary text-on-primary px-10 py-3 rounded-md font-label text-sm uppercase tracking-[0.2em] whitespace-nowrap hover:bg-primary-container transition-colors">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3ee] dark:bg-[#1b1c19] text-[#003434] dark:text-[#bfc8c8] full-width pt-16 pb-8 px-12 border-t border-[#bfc8c8]/15">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-12">
+<div class="text-xl font-serif text-[#003434] dark:text-[#fbf9f4] mb-8 md:mb-0">TF Cosmetology.</div>
+<div class="flex flex-wrap gap-8">
+<a class="font-label text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#3e2b00] transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#3e2b00] transition-colors" href="#">Scientific Compliance</a>
+<a class="font-label text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#3e2b00] transition-colors" href="#">Terms of Artistry</a>
+<a class="font-label text-xs uppercase tracking-widest text-[#6f7978] dark:text-[#bfc8c8] hover:text-[#3e2b00] transition-colors" href="#">Distribution</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center w-full opacity-60">
+<p class="font-label text-[10px] uppercase tracking-widest">© 2024 TF Cosmetology. The Human Laboratory.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+<span class="material-symbols-outlined text-sm" data-icon="language">language</span>
+</div>
+</div>
+</footer>
+</body></html>

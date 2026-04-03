@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Process | Apothecary Lab Manufacturing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#1b1c19",
+                        "tertiary-fixed": "#ffdea5",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bfc8c8",
+                        "surface-dim": "#dbdad5",
+                        "surface-container": "#f0eee9",
+                        "surface-variant": "#e4e2dd",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "on-tertiary-fixed": "#261900",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "on-primary-fixed-variant": "#044f4f",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#494741",
+                        "secondary-container": "#e7e2da",
+                        "inverse-on-surface": "#f2f1ec",
+                        "tertiary-container": "#5a4000",
+                        "outline": "#6f7978",
+                        "background": "#fbf9f4",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-tint": "#296767",
+                        "secondary-fixed": "#e7e2da",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#cac6be",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#3e2b00",
+                        "on-primary-fixed": "#002020",
+                        "inverse-primary": "#94d1d1",
+                        "surface-container-high": "#eae8e3",
+                        "inverse-surface": "#30312e",
+                        "primary-container": "#004d4d",
+                        "on-surface": "#1b1c19",
+                        "on-primary-container": "#80bdbc",
+                        "primary": "#003434",
+                        "on-secondary-fixed": "#1d1c17",
+                        "error": "#ba1a1a",
+                        "surface": "#fbf9f4",
+                        "on-tertiary-container": "#d3ac64",
+                        "secondary": "#615e58",
+                        "on-surface-variant": "#3f4848",
+                        "on-secondary-container": "#67645e",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#b0eeed",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#94d1d1",
+                        "surface-container-low": "#f5f3ee",
+                        "surface-bright": "#fbf9f4"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .editorial-shadow {
+            box-shadow: 0 24px 40px -4px rgba(27, 28, 25, 0.06);
+        }
+        .glass-nav {
+            background: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopAppBar Component -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-screen-2xl mx-auto">
+<a class="font-headline font-bold text-primary text-2xl tracking-tighter" href="#">Apothecary Lab</a>
+<div class="hidden md:flex items-center space-x-12 font-headline tracking-tight text-lg">
+<a class="text-stone-600 hover:text-primary transition-opacity duration-300" href="#">Treatments</a>
+<a class="text-primary border-b-2 border-primary pb-1" href="#">Manufacturing</a>
+<a class="text-stone-600 hover:text-primary transition-opacity duration-300" href="#">Philosophy</a>
+<a class="text-stone-600 hover:text-primary transition-opacity duration-300" href="#">Journal</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-label text-sm tracking-wide hover:opacity-90 active:opacity-50 transition-all">
+                Contact Us
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-8 mb-24 lg:mb-40">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-primary tracking-tighter leading-tight mb-8">
+                        From Your Idea to Finished Product
+                    </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        We handle the complexity of cosmetic engineering so you can focus on building your brand identity.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container rounded-xl overflow-hidden editorial-shadow">
+<img class="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]" data-alt="Close-up of minimalist amber glass apothecary bottles and pipettes on a clean beige stone surface with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHEh4iXnq6ugmWfZjAsgbJ9TVfaQEykLH4lDGdTd2dvUcoUqKy-WGqwYep2Ht3Cu5KRgPq6gSt4aVIfzpOSKUW4GQp0Gf5Ila5mJQbRNTKH4CyZaJZIYjWa2DK2YfufizG0lskEfCqV1YuH0dfXb9MOs--f7JejwakcFch4kAwm1MvRSRNAuAySuaYqGMsi6icdFJ3ju2z96CaCu3vJwOCJd54uttJIf1_Zv47GachZbFlSgowjmbBEkPtBAG8Dsmbm2xV7BMP17g"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Vertical Timeline Section -->
+<section class="bg-surface-container-low py-24 lg:py-40">
+<div class="max-w-4xl mx-auto px-8">
+<div class="mb-24 text-center">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary/60 mb-4 block">The Lifecycle</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary tracking-tight">Our Five-Phase Methodology</h2>
+</div>
+<div class="relative space-y-32">
+<!-- Vertical Line Connector -->
+<div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/30 -translate-x-1/2 hidden md:block"></div>
+<!-- Phase 1 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-start group">
+<div class="md:text-right pr-12 hidden md:block">
+<span class="font-headline text-6xl text-surface-container-highest select-none">01</span>
+</div>
+<div class="relative pl-12 md:pl-12">
+<!-- Mobile Circle & Line -->
+<div class="absolute left-0 top-0 w-12 h-12 bg-primary flex items-center justify-center rounded-full text-white z-10 editorial-shadow">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 text-primary">Discovery and Planning</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                Free consultation where we learn about your brand, your market and your goals. We put together a plan and cost estimate. No commitment.
+                            </p>
+<!-- Comparison Card -->
+<div class="bg-surface-container-lowest p-6 rounded-lg editorial-shadow border-l-4 border-tertiary">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-stone-400 mb-2">You Provide</p>
+<p class="text-sm font-medium">Vision &amp; Strategy</p>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-2">We Handle</p>
+<p class="text-sm font-medium">Market Analysis &amp; Tech Roadmap</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-start group">
+<div class="md:order-2 pl-12 hidden md:block">
+<span class="font-headline text-6xl text-surface-container-highest select-none">02</span>
+</div>
+<div class="relative md:text-right pr-0 md:pr-12 pl-12 md:pl-0">
+<div class="absolute left-0 md:left-auto md:-right-6 top-0 w-12 h-12 bg-primary flex items-center justify-center rounded-full text-white z-10 editorial-shadow">
+<span class="material-symbols-outlined">science</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 text-primary">Formula Development</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                Our R&amp;D team develops or customizes your formula. Samples sent for your approval. Revisions until you are happy.
+                            </p>
+<div class="bg-surface-container-lowest p-6 rounded-lg editorial-shadow border-r-0 md:border-r-4 border-tertiary text-left md:text-right">
+<div class="grid grid-cols-2 gap-4">
+<div class="md:order-2">
+<p class="font-label text-[10px] uppercase tracking-widest text-stone-400 mb-2">You Provide</p>
+<p class="text-sm font-medium">Sensory Goals</p>
+</div>
+<div class="md:order-1">
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-2">We Handle</p>
+<p class="text-sm font-medium">Bio-chemical Integrity &amp; R&amp;D</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-start group">
+<div class="md:text-right pr-12 hidden md:block">
+<span class="font-headline text-6xl text-surface-container-highest select-none">03</span>
+</div>
+<div class="relative pl-12 md:pl-12">
+<div class="absolute left-0 top-0 w-12 h-12 bg-primary flex items-center justify-center rounded-full text-white z-10 editorial-shadow">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 text-primary">Compliance and Registration</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                We handle FDA registration in Thailand, export documentation and regulatory requirements for your target market.
+                            </p>
+<div class="bg-surface-container-lowest p-6 rounded-lg editorial-shadow border-l-4 border-tertiary">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-stone-400 mb-2">You Provide</p>
+<p class="text-sm font-medium">Business Identity</p>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-2">We Handle</p>
+<p class="text-sm font-medium">Global Compliance Filings</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-start group">
+<div class="md:order-2 pl-12 hidden md:block">
+<span class="font-headline text-6xl text-surface-container-highest select-none">04</span>
+</div>
+<div class="relative md:text-right pr-0 md:pr-12 pl-12 md:pl-0">
+<div class="absolute left-0 md:left-auto md:-right-6 top-0 w-12 h-12 bg-primary flex items-center justify-center rounded-full text-white z-10 editorial-shadow">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 text-primary">Production &amp; QC</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                Manufacturing in our GMP certified facility with rigorous quality checks at every stage, from raw materials to final fill.
+                            </p>
+<div class="bg-surface-container-lowest p-6 rounded-lg editorial-shadow border-r-0 md:border-r-4 border-tertiary text-left md:text-right">
+<div class="grid grid-cols-2 gap-4">
+<div class="md:order-2">
+<p class="font-label text-[10px] uppercase tracking-widest text-stone-400 mb-2">You Provide</p>
+<p class="text-sm font-medium">Final Approval</p>
+</div>
+<div class="md:order-1">
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-2">We Handle</p>
+<p class="text-sm font-medium">ISO-Certified Synthesis</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phase 5 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-start group">
+<div class="md:text-right pr-12 hidden md:block">
+<span class="font-headline text-6xl text-surface-container-highest select-none">05</span>
+</div>
+<div class="relative pl-12 md:pl-12">
+<div class="absolute left-0 top-0 w-12 h-12 bg-primary flex items-center justify-center rounded-full text-white z-10 editorial-shadow">
+<span class="material-symbols-outlined">inventory_2</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 text-primary">Packaging and Delivery</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                Your branded products packaged to your spec and shipped wherever you need them globally with full tracking.
+                            </p>
+<div class="bg-surface-container-lowest p-6 rounded-lg editorial-shadow border-l-4 border-tertiary">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-stone-400 mb-2">You Provide</p>
+<p class="text-sm font-medium">Delivery Address</p>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-2">We Handle</p>
+<p class="text-sm font-medium">Logistics &amp; White-Glove Shipping</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-4xl mx-auto bg-surface-container editorial-shadow rounded-xl p-8 md:p-16 text-center">
+<h2 class="font-headline text-4xl md:text-5xl text-primary mb-6">Start With a Free Consultation</h2>
+<p class="font-body text-on-surface-variant mb-12 max-w-xl mx-auto">
+                    Let's discuss your formulation ideas and market goals. Our consultants are ready to outline your path to market.
+                </p>
+<form class="max-w-md mx-auto space-y-8">
+<div class="relative group">
+<label class="block text-left font-label text-sm text-primary mb-2">Full Name</label>
+<input class="w-full bg-surface-container-low border-none border-b-2 border-outline/30 focus:border-primary focus:ring-0 transition-colors p-3" placeholder="Enter your name" type="text"/>
+</div>
+<div class="relative group">
+<label class="block text-left font-label text-sm text-primary mb-2">Email Address</label>
+<input class="w-full bg-surface-container-low border-none border-b-2 border-outline/30 focus:border-primary focus:ring-0 transition-colors p-3" placeholder="your@email.com" type="email"/>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-md font-label tracking-widest uppercase text-sm hover:opacity-90 active:scale-[0.98] transition-all editorial-shadow" type="submit">
+                        Request Consultation
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-16 px-8 mt-auto bg-surface-container-low border-t border-surface-container-highest">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between items-end gap-8 w-full max-w-screen-2xl mx-auto">
+<div class="space-y-4">
+<span class="font-headline font-bold text-xl text-primary">Apothecary Lab</span>
+<p class="font-body text-sm text-stone-500 max-w-xs leading-relaxed">
+                    Setting the gold standard in premium cosmetic manufacturing since 1994. Quality without compromise.
+                </p>
+</div>
+<div class="flex flex-wrap gap-6 text-sm font-body text-stone-500">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Compliance</a>
+<a class="hover:text-primary transition-colors" href="#">SDS Sheets</a>
+<a class="hover:text-primary transition-colors" href="#">Sustainability Report</a>
+</div>
+<div class="text-right">
+<p class="font-body text-xs text-stone-400 uppercase tracking-widest">
+                    © 2024 Apothecary Lab Manufacturing. All Rights Reserved. ISO 22716 Certified.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
