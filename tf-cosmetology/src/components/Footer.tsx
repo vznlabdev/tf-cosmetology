@@ -89,7 +89,7 @@ export default function Footer() {
               Terms of Service
             </Link>
             <Link
-              href="/services"
+              href="/compliance"
               className="font-label text-[10px] tracking-widest uppercase text-on-background/60 hover:text-primary transition-all"
             >
               Regulatory Compliance
