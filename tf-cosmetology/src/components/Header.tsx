@@ -23,7 +23,7 @@ export default function Header() {
           href="/"
           className="font-headline font-semibold text-2xl tracking-tighter text-on-background"
         >
-          TF Cosmetology — The Foundry Labs
+          TF Cosmetology
         </Link>
 
         <nav className="hidden md:flex items-center space-x-10">
