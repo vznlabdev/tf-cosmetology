@@ -18,12 +18,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-nav transition-all">
-      <div className="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
-        <Link
-          href="/"
-          className="font-headline font-semibold text-2xl tracking-tighter text-on-background"
-        >
-          TF Cosmetology
+      <div className="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+        <Link href="/" className="flex items-center shrink-0">
+          <img
+            src="/images/tf-cosmetology-logo.png"
+            alt="TF Cosmetology"
+            className="h-10 -my-1"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-10">

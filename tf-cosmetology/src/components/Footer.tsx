@@ -5,9 +5,11 @@ export default function Footer() {
     <footer className="py-16 bg-surface-container-low">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-12 max-w-7xl mx-auto">
         <div className="space-y-8">
-          <div className="font-headline text-2xl italic font-light text-on-background">
-            TF Cosmetology
-          </div>
+          <img
+            src="/images/tf-cosmetology-logo.png"
+            alt="TF Cosmetology"
+            className="h-6"
+          />
           <p className="font-body text-sm text-on-background/60 max-w-sm">
             Leading the cosmetics and nutraceutical OEM industry with clinical
             excellence and scientific integrity since 1990.
