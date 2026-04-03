@@ -331,7 +331,7 @@ export default function SupplementsPage() {
               about better formulations that the body can actually use.&rdquo;
             </p>
             <p className="font-label text-xs uppercase tracking-widest text-outline">
-              Dr. Sang Hyun Moh, R&amp;D Manager, TF Cosmetology
+              Yuki Faith, Executive Director, TF Cosmetology
             </p>
           </div>
         </section>

@@ -222,7 +222,7 @@ export default function BrandingPage() {
         {/* Bottom CTA */}
         <section className="py-32 px-8 bg-surface-container-low">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary italic mb-8">
+            <h2 className="font-headline text-5xl md:text-7xl font-light tracking-tighter text-primary italic mb-8">
               Start Building Your Brand
             </h2>
             <p className="font-body text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">

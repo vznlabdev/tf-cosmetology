@@ -33,7 +33,7 @@ export default function CompliancePage() {
               <span className="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">
                 Regulatory Framework
               </span>
-              <h1 className="text-6xl md:text-8xl font-headline tracking-tighter leading-tight text-primary">
+              <h1 className="text-6xl md:text-8xl font-headline font-light tracking-tighter leading-tight text-primary">
                 Global Compliance <br />& Standards
               </h1>
             </div>

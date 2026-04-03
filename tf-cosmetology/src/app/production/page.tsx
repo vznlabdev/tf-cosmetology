@@ -97,7 +97,7 @@ export default function ProductionPage() {
               <span className="font-label text-xs uppercase tracking-[0.3em] text-primary/60 mb-6 block">
                 Manufacturing Excellence
               </span>
-              <h1 className="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-primary leading-[0.9] mb-8 italic">
+              <h1 className="font-headline text-6xl md:text-8xl font-light tracking-tighter text-primary leading-[0.9] mb-8 italic">
                 Where Your Products <br /> Come to Life
               </h1>
               <p className="font-body text-xl text-on-surface-variant max-w-md font-light leading-relaxed mb-10">
@@ -129,7 +129,7 @@ export default function ProductionPage() {
           <div className="max-w-7xl mx-auto px-8">
             <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
               <div className="max-w-2xl">
-                <h2 className="font-headline text-5xl font-bold tracking-tight text-primary italic mb-6">
+                <h2 className="font-headline text-5xl font-light tracking-tight text-primary italic mb-6">
                   Core Capabilities
                 </h2>
                 <p className="font-body text-lg text-on-surface-variant font-light">
@@ -187,7 +187,7 @@ export default function ProductionPage() {
               <span className="font-label text-xs uppercase tracking-[0.3em] text-tertiary mb-4 block">
                 Quality Assurance
               </span>
-              <h2 className="font-headline text-5xl font-bold text-primary italic">
+              <h2 className="font-headline text-5xl font-light text-primary italic">
                 Our Standards
               </h2>
             </div>
@@ -261,7 +261,7 @@ export default function ProductionPage() {
           <div className="absolute -right-20 -top-20 w-96 h-96 bg-primary-container/5 rounded-full blur-[120px]" />
           <div className="absolute -left-20 -bottom-20 w-96 h-96 bg-tertiary-container/5 rounded-full blur-[120px]" />
           <div className="max-w-4xl mx-auto px-8 text-center relative z-10">
-            <h2 className="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary italic mb-12">
+            <h2 className="font-headline text-5xl md:text-7xl font-light tracking-tighter text-primary italic mb-12">
               See How We Can Manufacture Your Product
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">

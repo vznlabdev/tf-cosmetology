@@ -24,19 +24,19 @@ function MaterialIcon({
 export default function HeritagePage() {
   const leaders = [
     {
-      image: "/images/ceo-portrait-arkarapat.jpg",
+      image: "/images/arkarapat-chanajindasopon-portrait.jpg",
       name: "Arkarapat Chanajindasopon",
       title: "Chief Executive Officer",
     },
     {
-      image: "/images/qc-rd-director-portrait.jpg",
+      image: "/images/penchit-charoensiri-portrait.jpg",
       name: "Penchit Charoensiri",
       title: "QC and R&D Director",
     },
     {
-      image: "/images/rd-manager-portrait.jpg",
-      name: "Dr. Sang Hyun Moh",
-      title: "R&D Manager",
+      image: "/images/yuki-faith-portrait.jpg",
+      name: "Yuki Faith",
+      title: "Executive Director",
     },
     {
       image: "/images/professional-man-glasses-studio.jpg",
@@ -56,7 +56,7 @@ export default function HeritagePage() {
               <span className="font-label text-xs uppercase tracking-[0.2em] text-outline mb-6 block">
                 Our Heritage
               </span>
-              <h1 className="font-headline text-6xl md:text-8xl leading-[1.05] text-primary mb-8">
+              <h1 className="font-headline text-6xl md:text-8xl font-light leading-[1.05] text-primary mb-8">
                 The bridge between{" "}
                 <span className="italic">botanical soul</span> and clinical
                 rigor.

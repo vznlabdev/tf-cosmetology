@@ -34,7 +34,7 @@ export default function HomePage() {
               <span className="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-6 block">
                 The Foundry Lab · OEM/ODM/OBM
               </span>
-              <h1 className="font-headline text-6xl md:text-8xl lg:text-9xl font-normal tracking-tight text-on-background leading-[0.9] mb-8 text-balanced">
+              <h1 className="font-headline text-6xl md:text-8xl lg:text-9xl font-light tracking-tight text-on-background leading-[0.9] mb-8 text-balanced">
                 Your Brand{" "}
                 <br />
                 <span className="italic font-light">Starts Here</span>
@@ -416,7 +416,7 @@ export default function HomePage() {
           <div className="max-w-screen-2xl mx-auto relative z-10">
             <div className="bg-surface-container-lowest rounded-2xl p-12 md:p-20 grid grid-cols-1 lg:grid-cols-2 gap-20 editorial-shadow">
               <div>
-                <h2 className="font-headline text-5xl font-normal tracking-tight mb-8 leading-none text-primary">
+                <h2 className="font-headline text-5xl font-light tracking-tight mb-8 leading-none text-primary">
                   Ready to Build <br />
                   Your Brand?
                 </h2>

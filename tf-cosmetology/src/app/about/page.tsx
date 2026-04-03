@@ -35,7 +35,7 @@ export default function AboutPage() {
       <main className="pt-32">
         {/* Hero */}
         <section className="px-8 md:px-24 py-20 lg:py-32 flex flex-col items-center text-center max-w-7xl mx-auto">
-          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl tracking-tight text-primary leading-none mb-8">
+          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-primary leading-none mb-8">
             The Team Behind Your Brand
           </h1>
           <p className="font-body text-xl md:text-2xl text-outline max-w-3xl leading-relaxed">
@@ -64,19 +64,19 @@ export default function AboutPage() {
                   name: "Arkarapat Chanajindasopon",
                   title: "Chief Executive Officer",
                   bio: "Over two decades of experience navigating the global cosmetics landscape. Architect of TF's international partnerships across Korea, Italy, France and Japan.",
-                  image: "/images/ceo-portrait-arkarapat.jpg",
+                  image: "/images/arkarapat-chanajindasopon-portrait.jpg",
                 },
                 {
                   name: "Penchit Charoensiri",
                   title: "QC and R&D Director",
                   bio: "Oversees quality control protocols and research direction across all product lines. Ensures every batch meets GMP and international safety standards.",
-                  image: "/images/qc-rd-director-portrait.jpg",
+                  image: "/images/penchit-charoensiri-portrait.jpg",
                 },
                 {
-                  name: "Dr. Sang Hyun Moh",
-                  title: "R&D Manager",
-                  bio: "PhD in Biotechnology with expertise in novel ingredient synthesis, advanced formulation techniques and Korean cosmetic science.",
-                  image: "/images/rd-manager-portrait.jpg",
+                  name: "Yuki Faith",
+                  title: "Executive Director, Global Business Development",
+                  bio: "Oversees international business development across all markets. Previously built and exited a beauty franchise serving clients in the United States, Canada, Mexico and Panama.",
+                  image: "/images/yuki-faith-portrait.jpg",
                 },
               ].map((leader) => (
                 <div key={leader.name} className="group">

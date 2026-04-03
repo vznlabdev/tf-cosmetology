@@ -22,7 +22,7 @@ export default function GetStartedPage() {
       <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
         {/* Hero */}
         <section className="mb-24 max-w-3xl">
-          <h1 className="text-6xl md:text-7xl font-headline font-semibold tracking-tight leading-tight mb-8">
+          <h1 className="text-6xl md:text-7xl font-headline font-light tracking-tight leading-tight mb-8">
             Let&apos;s Build Something Together
           </h1>
           <p className="text-xl md:text-2xl text-on-surface-variant font-body font-light leading-relaxed">
@@ -255,20 +255,28 @@ export default function GetStartedPage() {
                 Direct Channels
               </h4>
               <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <MaterialIcon name="phone" className="text-primary mt-0.5" />
+                  <div className="font-body text-sm space-y-1">
+                    <div>063-535-2158</div>
+                    <div>093-625-6556</div>
+                    <div>089-362-9491</div>
+                  </div>
+                </div>
                 <div className="flex items-center gap-3">
-                  <MaterialIcon name="phone" className="text-primary" />
-                  <span className="font-body text-sm">+66 2 XXX XXXX</span>
+                  <MaterialIcon name="call" className="text-primary" />
+                  <span className="font-body text-sm">Tel: 02-987-1625</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MaterialIcon name="chat_bubble" className="text-primary" />
                   <span className="font-body text-sm">
-                    LINE / WhatsApp: TFCosmetology
+                    LINE: @tf-cosmetology
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MaterialIcon name="mail" className="text-primary" />
                   <span className="font-body text-sm">
-                    info@tfcosmetology.com
+                    sales@tfcosmetology.com
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -289,8 +297,9 @@ export default function GetStartedPage() {
                     name="location_on"
                     className="text-primary text-4xl"
                   />
-                  <p className="font-label text-xs uppercase tracking-widest text-on-surface mt-2 font-bold">
-                    Corporate Headquarters, Bangkok
+                  <p className="font-label text-[10px] uppercase tracking-widest text-on-surface mt-2 font-bold leading-relaxed">
+                    42/34 Moo 5 Tambon Lamlukka<br />
+                    Amphur Lamlukka, Pathum Thani 12150
                   </p>
                 </div>
               </div>

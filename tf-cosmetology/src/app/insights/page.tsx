@@ -84,7 +84,7 @@ export default function InsightsPage() {
       <main className="pt-32 px-8 max-w-screen-2xl mx-auto">
         {/* Hero */}
         <header className="mb-20 max-w-3xl">
-          <h1 className="font-headline text-6xl md:text-8xl tracking-tighter text-primary mb-6 italic">
+          <h1 className="font-headline text-6xl md:text-8xl font-light tracking-tighter text-primary mb-6 italic">
             Insights
           </h1>
           <p className="font-body text-xl md:text-2xl text-outline leading-relaxed font-light">
