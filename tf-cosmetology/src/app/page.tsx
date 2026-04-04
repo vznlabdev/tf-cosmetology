@@ -59,11 +59,11 @@ export default function HomePage() {
             <div className="lg:col-span-5 relative">
               <div className="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow bg-surface-container">
                 <Image
-                  src="/images/elegant-glass-skincare-bottles.jpg"
-                  alt="Elegant glass skincare bottles on textured stone surface with soft shadows and warm morning light"
+                  src="/images/hero-private-label-collection.jpg"
+                  alt="Luxury private label cosmetic collection with gold caps on dark background"
                   width={600}
                   height={750}
-                  className="w-full h-full object-cover grayscale-[20%] mix-blend-multiply opacity-90"
+                  className="w-full h-full object-cover"
                   priority
                   unoptimized
                 />

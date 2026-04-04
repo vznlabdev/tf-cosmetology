@@ -40,8 +40,8 @@ export default function HeritagePage() {
     },
     {
       image: "/images/professional-man-glasses-studio.jpg",
-      name: "Our Growing Team",
-      title: "Operations and Production",
+      name: "Peak Science",
+      title: "R&D Leader",
     },
   ];
 

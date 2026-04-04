@@ -274,6 +274,12 @@ export default function GetStartedPage() {
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
+                  <MaterialIcon name="chat" className="text-primary" />
+                  <span className="font-body text-sm">
+                    WhatsApp: +1 303-434-8100
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
                   <MaterialIcon name="mail" className="text-primary" />
                   <span className="font-body text-sm">
                     sales@tfcosmetology.com
@@ -282,7 +288,7 @@ export default function GetStartedPage() {
                 <div className="flex items-center gap-3">
                   <MaterialIcon name="schedule" className="text-primary" />
                   <span className="font-body text-sm">
-                    Mon to Fri, 9am to 6pm Bangkok Time
+                    Mon to Fri, 10am to 5:30pm Bangkok Time
                   </span>
                 </div>
               </div>

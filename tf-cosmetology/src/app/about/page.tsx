@@ -75,7 +75,7 @@ export default function AboutPage() {
                 {
                   name: "Yuki Faith",
                   title: "Executive Director, Global Business Development",
-                  bio: "Oversees international business development across all markets. Previously built and exited a beauty franchise serving clients in the United States, Canada, Mexico and Panama.",
+                  bio: "Oversees international business development across all markets. Previously built and exited a beauty, health and wellness franchise serving clients in the United States, Canada, Mexico and Panama.",
                   image: "/images/yuki-faith-portrait.jpg",
                 },
               ].map((leader) => (
