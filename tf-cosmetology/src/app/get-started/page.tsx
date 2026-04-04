@@ -264,6 +264,12 @@ export default function GetStartedPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
+                  <MaterialIcon name="phone" className="text-primary" />
+                  <span className="font-body text-sm">
+                    English / International: +1 512-290-5329
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
                   <MaterialIcon name="call" className="text-primary" />
                   <span className="font-body text-sm">Tel: 02-987-1625</span>
                 </div>
@@ -271,12 +277,6 @@ export default function GetStartedPage() {
                   <MaterialIcon name="chat_bubble" className="text-primary" />
                   <span className="font-body text-sm">
                     LINE: @tf-cosmetology
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MaterialIcon name="chat" className="text-primary" />
-                  <span className="font-body text-sm">
-                    WhatsApp: +1 303-434-8100
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
